@@ -1,0 +1,65 @@
+       
+        
+       
+  
+        
+       
+
+        
+        
+
+       
+        
+          
+        
+        
+
+       
+
+          
+
+        .summary-widgets {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2rem 2rem;
+        }
+
+        .widget-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .widget-item img {
+            max-width: 40%;
+        }
+
+        .donors {
+            margin: 2rem 2rem;
+        }
+
+        .summary-intro {
+            margin: 2rem 2rem;
+        }
+
+/* Summary of doantions Table - */
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.donation-table th,
+.donation-table td {
+  /*border: 1px solid #ddd;*/
+  padding: 8px;
+  text-align: left;
+}
+
+.donation-table th {
+  background-color: #ebe4ff;
+}
+
+.donation-table tbody tr:nth-child(even) {
+  background-color: #ebe4ff;
+}
+
