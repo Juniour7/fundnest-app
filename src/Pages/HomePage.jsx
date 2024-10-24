@@ -2,6 +2,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate  } from 'react-router-dom';
 
+//componets
+import StartCampaign from '../Components/HomComponents/StartCampaign';
+import HomeCampaigns from '../Components/HomComponents/HomeCampaigns';
+
 //images
 import Image1 from '../assets/Logo/microsoft.png';
 import Image2 from '../assets/Logo/Nvidia.jpeg';
@@ -22,7 +26,6 @@ import icon4 from '../assets/icons/icon4.png';
 import icon5 from '../assets/icons/icon5.png';
 
 //icons
-import { IoArrowRedoOutline } from "react-icons/io5";
 import { MdArrowForward } from "react-icons/md";
 
 
@@ -168,6 +171,12 @@ const HomePage = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Start Today */}
+                <StartCampaign />
+
+                {/* HomeCampaigns */}
+                <HomeCampaigns />
 
                 {/* Trust Now */}
                 <section className='bg-[#00AEEF] py-5 px-3 text-white'>
