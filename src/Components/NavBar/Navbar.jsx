@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { NavLink, Link } from "react-router-dom";
 
 //Images
-import Logo from "../../Assets/Logo/FUND NEST LOGO-02.png";
+import Logo from "../../assets/Logo/FUND NEST LOGO-02.png";
 
 
 const Navbar = () => {
