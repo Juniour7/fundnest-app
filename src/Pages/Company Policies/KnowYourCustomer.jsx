@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet-async';
 
 
 //Components
-import Navbar from '../../Components/NavBar/Navbar';
-import Footer from '../../Components/Footer/Footer';
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
 
 
@@ -14,7 +12,6 @@ const KnowYourCustomer = () => {
       <Helmet>
         <title>Know Your Customer | Fund Nest</title>
       </Helmet>
-      <Navbar />
       <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
         <div className='w-[90%] mx-auto text-sm pb-[25px]'>
           <h1 className='text-center text-3xl font-semibold py-[20px]'>Know Your Customer (KYC) and Customer Due Diligence (CDD) Procedures for Fundnest </h1>
@@ -395,7 +392,6 @@ const KnowYourCustomer = () => {
           </div>
         </div>
       </section>
-      <Footer />
       <ScrollToTop />
     </>
   )
