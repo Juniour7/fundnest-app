@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 
 //images
-import Hero from '../Assets/hero.jpg';
+import Hero from '../assets/hero.jpg';
 
 const Home = () => {
   const navigate = useNavigate();

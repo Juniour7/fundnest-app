@@ -5,7 +5,7 @@ import { MdChevronRight } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 
 //Images
-import Logo from '../Assets/Logo/FUND NEST LOGO-01.png';
+import Logo from '../assets/Logo/FUND NEST LOGO-01.png';
 
 
 function SignIn() {
