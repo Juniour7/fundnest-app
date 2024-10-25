@@ -153,18 +153,18 @@ const HomePage = () => {
                 </section>
 
                 {/* Get Started */}
-                <section className='w-[85%] mx-auto py-11 md:flex justify-center '>
-                    <div className='basis-[50%] flex flex-wrap gap-3 relative mb-4 md:mb-[7rem]'>
+                <section className='w-[90%] md:w-[85%] mx-auto py-11 md:flex justify-center '>
+                    <div className='basis-[50%] flex flex-wrap gap-2 md:gap-3 relative mb-4 md:mb-[7rem]'>
                         <div className='w-[9.375rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] overflow-hidden rounded-lg'>
                             <img src={rectangle1} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
-                        <div className='w-[9.375rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
+                        <div className='w-[9.345rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
                             <img src={rectangle2} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
-                        <div className='w-[9.375rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] overflow-hidden rounded-lg'>
+                        <div className='w-[9.345rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] overflow-hidden rounded-lg'>
                             <img src={rectangle3} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
-                        <div className='w-[9.375rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
+                        <div className='w-[9.345rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
                             <img src={rectangle4} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
                     </div>
