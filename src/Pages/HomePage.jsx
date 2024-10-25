@@ -19,9 +19,9 @@ import Image5 from '../assets/Logo/undp.png';
 import Image6 from '../assets/Logo/hanga.png';
 
 import rectangle1 from '../assets/slideshow/Rectangle1.png';
-import rectangle2 from '../assets/slideshow/Rectangle2.png';
-import rectangle3 from '../assets/slideshow/Rectangle3.png';
-import rectangle4 from '../assets/slideshow/Rectangle4.png';
+import rectangle2 from '../assets/slideshow/rectangle2.png';
+import rectangle3 from '../assets/slideshow/rectangle3.png';
+import rectangle4 from '../assets/slideshow/rectangle4.png';
 
 import icon1 from '../assets/icons/icon1.png';
 import icon2 from '../assets/icons/icon2.png';
