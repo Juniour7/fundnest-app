@@ -8,11 +8,13 @@ import React from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import Layout from "./Pages/Layout/Layout";
 
 // Layout and Common Components
 import NavMenu from "./Components/NavBar/NavMenu/NavMenu";
 import AdminLayout from "./Components/admindashboard/AdminLayout";
 import Footer from "./Components/Footer/Footer";
+import Footers from "./Components/Footer/Footers";
 import Navbar from "./Components/NavBar/Navbar";
 import UserDashBoardLayout from "./Components/UserDashBoardcomponents.js/UserDashBoardLayout";
 
@@ -103,44 +105,30 @@ function App() {
         <CampaignProvider>
           <Router>
             <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <Navbar />
-                    <Home />
-                    <Learning />
-                    <Testimonial />
-                    <Footer />
-                  
-                  </>
-                }
-              />
-              <Route
-                path="/home"
-                element={
-                  <>
-                    <NavMenu />
-                    <HomePage />
-                    <Footer />
-                  
-                  </>
-                }
-              />
-              <Route path="/refund-policy" element={<RefundPolicy />} />
-              <Route path="/contact-us" element={<Contact />} />
+              <Route element={<Layout />}>
+                <Route path="/" element={<HomePage />}  />
+                <Route path="/refund-policy" element={<RefundPolicy />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/know-your-customer" element={<KnowYourCustomer />} />
+                <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />
+                <Route path="/donation-create" element={<DonationCreate />} />
+                <Route path="/donation-desc/:campaignId" element={<DonationDesc />} />
+                <Route path="/donation-form/:id" element={<DonationForm />} />
+              <Route path="/campaign" element={<CategoryFilter />} />
+
+              </Route>
+              
+
+
               <Route path="/MonthlyProgress" element={<MonthlyProgress/>} />
-              <Route path="/know-your-customer" element={<KnowYourCustomer />} />
-              <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />
+              
               <Route path="/request-password-reset/" element={<ForgotPassword />} />
               <Route path="/reset-password" element={<ResetPassword />} />
               <Route path="/fundraising-form" element={<FundraisingForm />} />
-              <Route path="/campaign" element={<CategoryFilter />} />
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<SignUpForm />} />
               <Route path="/summary" element={<Summary />} />
-              <Route path="/donation-create" element={<DonationCreate />} />
-              <Route path="/donation-desc/:campaignId" element={<DonationDesc />} />
+              
               <Route path="/user-list" element={<UserList />} />
               <Route path="/user-detail/:id" element={<UserDetail />} />
               <Route path="/update-user/:id" element={<UpdateUser />} />
@@ -197,7 +185,6 @@ function App() {
               <Route path="/campaign-create" element={<CreateCampaign />} />
               <Route path="/withdrawal-create" element={<WithdrawalCreate />} />
               <Route path="/transaction-create" element={<TransactionCreate />} />
-              <Route path="/donation-form/:id" element={<DonationForm />} />
               <Route path="/campaign-slider" element={<CampaignSlider />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-conditions" element={<TermsandConditions />} />

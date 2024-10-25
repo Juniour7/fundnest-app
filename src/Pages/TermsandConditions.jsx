@@ -2,8 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 //components
-import Navbar from '../Components/NavBar/Navbar';
-import Footer from '../Components/Footer/Footer';
 import ScrollToTop from '../Components/ScrollToTop/ScrollToTop';
 
 const TermsData = [
@@ -48,7 +46,6 @@ const TermsandConditions = () => {
             <title>Terms and Conditions | Fund Nest</title>
             <meta name="description" content="Our Terms and Conditions" />
         </Helmet>
-        <Navbar />
         <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
             <div className='w-[90%] md:w-[85%] mx-auto text-sm'>
                 <h1 className='text-center text-3xl font-semibold py-[20px]'>Terms and Conditions</h1>
@@ -71,7 +68,6 @@ const TermsandConditions = () => {
             </div>
         </section>
         <ScrollToTop />
-        <Footer />
     </>
   )
 }

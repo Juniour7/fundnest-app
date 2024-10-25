@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sen: ['Sen', 'sans-serif']
+        sen: ['Sen', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif']
       },
     },
   },

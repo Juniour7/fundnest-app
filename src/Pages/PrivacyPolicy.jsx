@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet-async';
 
 
 //components
-import Navbar from '../Components/NavBar/Navbar';
-import Footer from '../Components/Footer/Footer';
 import ScrollToTop from '../Components/ScrollToTop/ScrollToTop';
 
 const PrivacyPolicy = () => {
@@ -14,7 +12,6 @@ const PrivacyPolicy = () => {
             <title>Privacy Policy | Fund Nest</title>
             <meta name="description" content="Our Privacy Policy" />
         </Helmet>
-        <Navbar />
         <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
             <div className='w-[90%] mx-auto text-sm'>
                 <h1 className='text-center text-3xl font-semibold py-[20px]'>Privacy Policy</h1>
@@ -94,7 +91,6 @@ const PrivacyPolicy = () => {
             </div>
         </section>
         <ScrollToTop />
-        <Footer />
     </>
   )
 }

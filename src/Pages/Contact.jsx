@@ -1,8 +1,6 @@
 import React from 'react';
 
 //components
-import Navbar from '../Components/NavBar/Navbar';
-import Footer from '../Components/Footer/Footer';
 import { Helmet } from 'react-helmet-async';
 
 //icons
@@ -17,8 +15,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us | Fund Nest</title>
       </Helmet>
-      <Navbar />
-      <body className="mt-[60px] md:mt-[90px] bg-[#F3FAFB]">
+      <body className=" bg-[#F3FAFB]">
         <section
           className="bg-fixed relative bg-cover bg-center bg-no-repeat w-full h-[250px] md:h-[400px] z-0"
           style={{
@@ -182,7 +179,6 @@ const Contact = () => {
           </div>
         </section>
       </body>
-      <Footer />
     </>
   );
 };

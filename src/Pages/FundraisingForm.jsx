@@ -1,15 +1,12 @@
-import Footer from "../Components/Footer/Footer";
-import Navbar from "../Components/NavBar/Navbar";
 import React, { useState } from "react";
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
-import Select from "react-select";
 import { CountryDropdown } from "react-country-region-selector";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
 //Components
-
-
+import Footers from "../Components/Footer/Footers";
+import NavMenu from "../Components/NavBar/NavMenu/NavMenu";
 
 const FundraisingForm = () => {
   const navigate = useNavigate();
@@ -124,8 +121,8 @@ const handleSubmit = async (e) => {
         <title>Fundraising Form | Fund Nest</title>
         <meta name="description" content="Fundraising Form" />
       </Helmet>
-    <Navbar />
-    <div className='bg-[#F3FAFB] flex flex-col justify-center items-center mt-[90px]'>
+    <NavMenu />
+    <div className='bg-[#F3FAFB] flex flex-col justify-center items-center'>
       <div className=" bg-white w-[90%] md:w-[75%] lg:w-[40%] mx-auto  rounded-md shadow-xl p-2 md:p-4 my-[20px]">
         <h1 className='text-center text-2xl my-[30px]'>START A FUNDRAISER</h1>
         <form onSubmit={handleSubmit} className='md:px-3 space-y-[10px] flex flex-col justify-center'>
@@ -261,7 +258,7 @@ const handleSubmit = async (e) => {
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </div>
-    <Footer />
+    <Footers />
     <ScrollToTop />
     </>
   );

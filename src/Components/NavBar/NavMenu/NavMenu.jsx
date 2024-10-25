@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 //Images
 import Logo from '../../../assets/Logo/FUND NEST LOGO-02.png';
+import Logo1 from '../../../assets/Logo/FUND NEST LOGO-03.png';
 
 
 //Icons
@@ -34,9 +35,9 @@ const NavSm = () => {
     };
 
     return (
-        <nav className='w-full py-1 px-3 flex justify-between items-center text-[#00AEEF] bg-white'>
-            <div className='max-w-[4.5rem]'>
-                <img src={Logo} className='w-full h-full' alt='Logo' />
+        <nav className='w-full py-1 px-3 flex justify-between items-center bg-[#00AEEF] text-white font-sen'>
+            <div className='max-w-[4.575rem]'>
+                <img src={Logo1} className='w-full h-full' alt='Logo' />
             </div>
             <div className='flex items-center'>
                 <button onClick={toggleMenu} className='text-4xl transition-all duration-700'>
@@ -45,25 +46,25 @@ const NavSm = () => {
             </div>
 
             {isMenuOpen && (
-                <div className='absolute top-16 left-0 right-0 bg-[#00AEEF] text-white z-10'>
+                <div className='absolute top-16 left-0 right-0 bg-[#00AEEF] text-white z-50'>
                     <ul className='flex flex-col items-center py-2 text-lg'>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Home</Link>
+                            <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
                         </li>
-                        <li className='py-1'>
+                        {/* <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                        </li>
+                        </li> */}
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
+                            <Link to='/campaign' onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
                         </li>
-                        <li className='py-1'>
+                        {/* <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>Blog</Link>
-                        </li>
-                        <li className='py-1'>
+                        </li> */}
+                        {/* <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>Career</Link>
-                        </li>
+                        </li> */}
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+                            <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                         </li>
                     </ul>
                     <div className='flex flex-col items-center'>
@@ -188,9 +189,9 @@ const NavLg = () => {
       };
     return (
         <>
-            <section>
+            <section className=' '>
                 {/* Right Side */}
-                <div className='bg-[#00AEEF] w-full p-1 px-4 text-white flex justify-between'>
+                <div className='bg-[#00AEEF] w-full p-1 px-4 text-white flex justify-between font-sen'>
                     <div className='flex justify-center gap-2 divide-x-[1px] divide-white'>
                         <div className='flex justify-center gap-1'>
                             <span className='text-xl'>
@@ -244,24 +245,24 @@ const NavLg = () => {
                     </div>
                 </div>
             </section>
-            <nav className='w-full py-1 px-3 flex justify-between'>
+            <nav className='w-full py-1 px-3 flex justify-between bg-white shadow-md'>
                 <div className='max-w-[5.5rem]'>
                     <img src={Logo} className='w-full h-full' />
                 </div>
                 <div className='my-auto'>
-                    <ul className='flex gap-3 font-semibold'>
+                    <ul className='flex gap-3 font-semibold text-lg'>
                         <li>
                             <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
                                 Home
                             </NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink to='/about-us' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
                                 About Us
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li>
-                            <NavLink to='/campaigns' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
+                            <NavLink to='/campaign' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
                                 Campaigns
                             </NavLink>
                         </li>

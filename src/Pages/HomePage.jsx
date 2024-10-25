@@ -5,6 +5,10 @@ import { useNavigate  } from 'react-router-dom';
 //componets
 import StartCampaign from '../Components/HomComponents/StartCampaign';
 import HomeCampaigns from '../Components/HomComponents/HomeCampaigns';
+import AskedQuery from '../Components/HomComponents/AskedQuery';
+import Testimonials from '../Components/HomComponents/Testimonials';
+import MailingList from '../Components/HomComponents/MailingList';
+import partanerCaraousel from '../Components/HomComponents/PartnerCarousel.jsx/partanerCaraousel';
 
 //images
 import Image1 from '../assets/Logo/microsoft.png';
@@ -25,10 +29,30 @@ import icon3 from '../assets/icons/icon3.png';
 import icon4 from '../assets/icons/icon4.png';
 import icon5 from '../assets/icons/icon5.png';
 
+import logo1 from '../assets/Logo/1.png';
+import logo2 from '../assets/Logo/2.png';
+import logo3 from '../assets/Logo/3.png';
+import logo4 from '../assets/Logo/4.png';
+
+
 //icons
 import { MdArrowForward } from "react-icons/md";
 
 
+const PartnerLogo = [
+    {
+        image: logo1
+    },
+    {
+        image: logo2
+    },
+    {
+        image: logo3
+    },
+    {
+        image: logo4
+    },
+];
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -89,7 +113,7 @@ const HomePage = () => {
     return (
         <>
             <Helmet>
-                <title>Homepage | Fund Nest</title>
+                <title>Home | Fund Nest</title>
                 <meta name="description" content="FundNest Homepage" />
             </Helmet>
             <body className='font-sen'>
@@ -117,13 +141,15 @@ const HomePage = () => {
                     <div className='px-2 lg:px-7'>
                         <h4 className='text-md md:text-lg font-semibold md:w-[60%]'>Trusted by Non-Profits, churches and Social Enterprises in 4 Countries | Verified by Industry Leaders for Secure and Impactful Fundraising: </h4>
                     </div>
-                    <div className='w-[95%] mx-auto grid grid-cols-3 lg:grid-cols-6 justify-center gap-2 py-4'>
-                        {FounderImages.map((Data, index) => (
+                    <div className='w-[95%] mx-auto grid grid-cols-2 lg:grid-cols-6 justify-center gap-2 py-4'>
+                        {/* {FounderImages.map((Data, index) => (
                             <div key={index} className='w-[8.5rem] h-[3.5rem]'>
                                 <img src={Data.url} alt='logo' className='w-full h-full' />
                             </div>
-                        ))}
+                        ))} */}
+                        
                     </div>
+                    <partanerCaraousel />
                 </section>
 
                 {/* Get Started */}
@@ -183,12 +209,32 @@ const HomePage = () => {
                     <h1 className='text-center text-2xl md:text-3xl font-bold'>WHY TRUST FUNDNEST</h1>
                     <div className='w-[90%] mx-auto md:w-full mt-5 grid lg:grid-cols-5 gap-2'>
                         {TrustData.map((Data,index) => (
-                            <div key={index} className='bg-white px-2 py-3  shadow-md '>
+                            <div key={index} className='bg-white px-2 py-3  shadow-md  group hover:bg-red-800'>
                                 <div className='flex flex-col justify-center items-center '>
                                     <img src={Data.icon} alt="logo" className='max-w-[3.125rem] h-[3.125rem] object-cover' />
                                 </div>
                                 <h1 className='text-black mt-3 text-center font-semibold text-lg'>{Data.title}</h1>
                                 <p className='text-black text-sm mt-2 mb-3'>{Data.content}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Faqs */}
+                <AskedQuery />
+
+                {/* Testimonials */}
+                <Testimonials />
+
+                {/* Mailing List */}
+                <MailingList />
+
+                {/* Our Partners */}
+                <section className='py-11 px-3'>
+                    <div className='grid grid-cols-2 lg:grid-cols-4 justify-center gap-3'>
+                        {PartnerLogo.map((Logo,index) => (
+                            <div key={index}>
+                                <img src={Logo.image} loading='lazy' alt="" className=''/>
                             </div>
                         ))}
                     </div>

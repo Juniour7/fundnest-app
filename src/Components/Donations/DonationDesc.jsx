@@ -7,8 +7,6 @@ import { getCampaignDetails } from "../../services/CampaignService";
 
 
 //components
-import Footer from "../Footer/Footer";
-import Navbar from "../NavBar/Navbar";
 import ProgressBar from "../Progress Bar/ProgressBar";
 
 const DonationDesc = () => {
@@ -48,8 +46,7 @@ const DonationDesc = () => {
       <Helmet>
         <title>{campaign.campaign_name} | Fund Nest</title>
       </Helmet>
-      <Navbar />
-      <section className='py-[30px] mt-[60px] md:mt-[90px] '>
+      <section className='py-[30px] '>
       <section className='w-[90%] mx-auto'>
         <div className='flex flex-wrap gap-3 justify-center'>
           <div className='lg:w-[60%]'>
@@ -93,7 +90,6 @@ const DonationDesc = () => {
         </div>
       </section>
       </section>
-      <Footer />
       <ScrollToTop />
     </>
   );

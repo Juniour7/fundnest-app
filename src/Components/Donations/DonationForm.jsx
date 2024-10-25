@@ -1,5 +1,3 @@
-import Footer from "../Footer/Footer";
-import Navbar from "../NavBar/Navbar";
 import React, { useEffect, useState } from "react";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import axios from "axios";
@@ -131,8 +129,7 @@ const DonationForm = () => {
 
   return (
     <>
-      <Navbar />
-      <section className='mt-[60px] md:mt-[90px] py-[30px] bg-[#F3FAFB]'>
+      <section className=' py-[30px] bg-[#F3FAFB]'>
         <div className='text-center space-y-4 mb-[20px]'>
           <h3 className='text-3xl font-semibold'>Donate to a cause</h3>
           <h4 className='text-lg font-medium'>Thank you for your support</h4>
@@ -203,7 +200,6 @@ const DonationForm = () => {
           <p className="text-center mt-4 text-green-500">{message}</p>
         </div>
       </section>
-      <Footer />
       <ScrollToTop />
     </>
   );
