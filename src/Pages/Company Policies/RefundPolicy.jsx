@@ -11,9 +11,9 @@ const RefundPolicy = () => {
         <Helmet>
             <title>Refund Policy | Fund Nest</title>
         </Helmet>
-        <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
+        <section className='font-sen'>
             <div className='w-[90%] mx-auto text-sm pb-[25px]'>
-                <h1 className='text-center text-3xl font-semibold py-[20px]'>Refund Policy for Fundnest </h1>
+                <h1 className='text-center text-xl md:text-3xl font-semibold py-[20px]'>Refund Policy for Fundnest </h1>
                 <div className='font-light space-y-3 text-md '>
                     <h2 className='text-xl font-semibold'><span className='font-bold'>1.</span> Introduction</h2>
                     <p className='w-[90%] text-[#595959]'>Fundnest  is dedicated to maintaining the highest level of customer satisfaction and trust. This comprehensive Refund Policy outlines the circumstances under which refunds will be provided, aligning with industry standards observed by leading platforms such as GoFundMe and DonorBox. Our policy is designed to ensure transparency, fairness, and efficiency in addressing donor refund requests while maintaining the integrity of our fundraising platform.</p>

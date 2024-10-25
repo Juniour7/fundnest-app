@@ -10,9 +10,9 @@ const AntiMoneyLaundering = () => {
       <Helmet>
         <title>Anti-Money Laundering Policy | Fund Nest</title>
       </Helmet>
-      <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
+      <section className='font-sen'>
         <div className='w-[90%] mx-auto text-sm pb-[25px]'>
-          <h1 className='text-center text-3xl font-semibold py-[20px]'>Anti-Money Laundering (AML) Policy for Fundnest</h1>
+          <h1 className='text-center text-xl md:text-3xl font-semibold py-[20px]'>Anti-Money Laundering (AML) Policy for Fundnest</h1>
           <div className='font-light text-md mb-[10px]'>
             <h2 className='text-xl font-semibold'><span className='font-bold'>1.</span> Introduction</h2>
             <p className='w-[90%] text-[#595959]'>Fundnest   is steadfastly committed to upholding the highest standards of Anti-Money Laundering (AML) compliance, aligning ourselves with industry best practices observed by leading platforms such as GoFundMe and DonorBox. This comprehensive policy mandates that all management and employees adhere to these stringent standards to prevent the misuse of our services for money laundering purposes.</p>

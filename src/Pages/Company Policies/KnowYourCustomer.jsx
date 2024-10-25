@@ -12,9 +12,9 @@ const KnowYourCustomer = () => {
       <Helmet>
         <title>Know Your Customer | Fund Nest</title>
       </Helmet>
-      <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
+      <section className=' font-sen'>
         <div className='w-[90%] mx-auto text-sm pb-[25px]'>
-          <h1 className='text-center text-3xl font-semibold py-[20px]'>Know Your Customer (KYC) and Customer Due Diligence (CDD) Procedures for Fundnest </h1>
+          <h1 className='text-center text-xl md:text-3xl font-semibold py-[20px]'>Know Your Customer (KYC) and Customer Due Diligence (CDD) Procedures for Fundnest </h1>
           <div className='space-y-[15px]'>
             <div className='font-light text-md'>
               <h2 className='text-xl font-semibold'><span className='font-bold'>1.</span> Introduction</h2>
