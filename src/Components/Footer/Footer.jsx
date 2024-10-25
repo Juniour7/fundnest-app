@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 //Images
-import Logo from '../../Assets/Logo/FUND NEST LOGO-02.png';
+import Logo from '../../assets/Logo/FUND NEST LOGO-02.png';
 
 //Icons
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
