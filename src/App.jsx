@@ -109,12 +109,15 @@ function App() {
                 <Route path="/" element={<HomePage />}  />
                 <Route path="/refund-policy" element={<RefundPolicy />} />
                 <Route path="/contact-us" element={<Contact />} />
+
                 <Route path="/know-your-customer" element={<KnowYourCustomer />} />
                 <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-conditions" element={<TermsandConditions />} />
                 <Route path="/donation-create" element={<DonationCreate />} />
                 <Route path="/donation-desc/:campaignId" element={<DonationDesc />} />
                 <Route path="/donation-form/:id" element={<DonationForm />} />
-              <Route path="/campaign" element={<CategoryFilter />} />
+                <Route path="/campaign" element={<CategoryFilter />} />
 
               </Route>
               
@@ -186,8 +189,7 @@ function App() {
               <Route path="/withdrawal-create" element={<WithdrawalCreate />} />
               <Route path="/transaction-create" element={<TransactionCreate />} />
               <Route path="/campaign-slider" element={<CampaignSlider />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-conditions" element={<TermsandConditions />} />
+              
               
             </Routes>
           </Router>

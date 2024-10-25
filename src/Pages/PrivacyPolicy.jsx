@@ -12,9 +12,9 @@ const PrivacyPolicy = () => {
             <title>Privacy Policy | Fund Nest</title>
             <meta name="description" content="Our Privacy Policy" />
         </Helmet>
-        <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
+        <section className=' font-sen'>
             <div className='w-[90%] mx-auto text-sm'>
-                <h1 className='text-center text-3xl font-semibold py-[20px]'>Privacy Policy</h1>
+                <h1 className='text-center text-xl md:text-3xl font-semibold py-[20px]'>Privacy Policy</h1>
                 <div className='font-light space-y-3 text-md '>
                     <h2 className='text-xl font-semibold'>Introduction</h2>
                     <p className='w-[90%] text-[#595959]'>Fundnest ("we," "us," or "our") operates the crowdfunding platform located at Fundnest . This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Platform. Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the Platform.</p>

@@ -46,9 +46,9 @@ const TermsandConditions = () => {
             <title>Terms and Conditions | Fund Nest</title>
             <meta name="description" content="Our Terms and Conditions" />
         </Helmet>
-        <section className='mt-[60px] md:mt-[100px] font-[Poppins]'>
+        <section className='font-sen'>
             <div className='w-[90%] md:w-[85%] mx-auto text-sm'>
-                <h1 className='text-center text-3xl font-semibold py-[20px]'>Terms and Conditions</h1>
+                <h1 className='text-center text-xl md:text-3xl font-semibold py-[20px]'>Terms and Conditions</h1>
                 <div className='space-y-3 mb-[20px] text-sm font-light'>
                     <div className='font-light space-y-1 text-md '>
                         <h2 className='text-lg font-semibold'>Introduction</h2>
