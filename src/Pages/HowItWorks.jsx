@@ -137,7 +137,7 @@ const HowItWorks = () => {
                         <h1 className='text-white font-bold text-xl md:text-3xl text-right'> FOR FUNDRAISERS</h1>
                         <div className='mt-3 grid md:grid-cols-2 lg:grid-cols-3 gap-3  mx-auto'>
                             {ForFundraiser.map((Data , index) => (
-                                <div key={index} className='bg-white rounded-lg p-4 shadow-md'>
+                                <div key={index} className='bg-white rounded-lg p-4 shadow-md hover:-translate-y-3 hover:cursor-pointer transition-all ease-in-out duration-300'>
                                     <div className='bg-[#00AEEF] text-white w-[50px] h-[50px] rounded-full'>
                                         <h4 className='text-3xl p-2 font-bold'>{Data.number}</h4>
                                     </div>
@@ -152,12 +152,12 @@ const HowItWorks = () => {
                 </div>
 
                 {/* For Donors */}
-                <div className='bg-[#F2F2F2] py-5'>
+                <div className='bg-[#F2F2F2] py-5 '>
                     <div className='w-[80%] mx-auto'>
                         <h1 className='text-[#00AEEF] font-bold text-xl md:text-3xl '> FOR DONORS</h1>
                         <div className='mt-3 grid md:grid-cols-2 lg:grid-cols-3 gap-3  mx-auto'>
                             {ForDonor.map((Data , index) => (
-                                <div key={index} className='bg-white rounded-lg p-4 shadow-md'>
+                                <div key={index} className='bg-white rounded-lg p-4 shadow-md hover:-translate-y-3 hover:cursor-pointer transition-all ease-in-out duration-300'>
                                     <div className='bg-[#00AEEF] text-white w-[50px] h-[50px] rounded-full'>
                                         <h4 className='text-3xl p-2 font-bold'>{Data.number}</h4>
                                     </div>
@@ -174,7 +174,7 @@ const HowItWorks = () => {
 
             {/* Start A campaign */}
             <section className='py-5'>
-                <div className='w-[80%] mx-auto bg-[#00AEEF] rounded-lg md:flex'>
+                <div className='w-[78%] mx-auto bg-[#00AEEF] rounded-lg md:flex'>
                     <div className='basis-[50%] pt-5'>
                         <img src={frame} alt="" />
                     </div>

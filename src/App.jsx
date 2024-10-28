@@ -8,19 +8,15 @@ import React from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import Layout from "./Pages/Layout/Layout";
 
 // Layout and Common Components
-import NavMenu from "./Components/NavBar/NavMenu/NavMenu";
 import AdminLayout from "./Components/admindashboard/AdminLayout";
-import Footer from "./Components/Footer/Footer";
-import Footers from "./Components/Footer/Footers";
-import Navbar from "./Components/NavBar/Navbar";
 import UserDashBoardLayout from "./Components/UserDashBoardcomponents.js/UserDashBoardLayout";
+import Layout from "./Pages/Layout/Layout";
 
 // Pages
 import HomePage from "./Pages/HomePage";
-import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
 import HowItWorks from "./Pages/HowItWorks";
 
 import ForgotPassword from "./Pages/Password Reset/ForgotPassword";
@@ -109,6 +105,7 @@ function App() {
             <Routes>
               <Route element={<Layout />}>
                 <Route path="/" element={<HomePage />}  />
+                <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/refund-policy" element={<RefundPolicy />} />
                 <Route path="/contact-us" element={<Contact />} />

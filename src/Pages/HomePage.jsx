@@ -11,6 +11,7 @@ import MailingList from '../Components/HomComponents/MailingList';
 import partanerCaraousel from '../Components/HomComponents/PartnerCarousel.jsx/partanerCaraousel';
 
 //images
+import hero from '../assets/slideshow/hero.jpg'
 import Image1 from '../assets/Logo/microsoft.png';
 import Image2 from '../assets/Logo/Nvidia.jpeg';
 import Image3 from '../assets/Logo/ibm.png';
@@ -37,7 +38,6 @@ import logo4 from '../assets/Logo/4.png';
 
 //icons
 import { MdArrowForward } from "react-icons/md";
-import { IoIosMail } from "react-icons/io";
 
 const PartnerLogo = [
     {
@@ -119,7 +119,7 @@ const HomePage = () => {
             <body className='font-sen'>
                 {/* Hero Section */}
                 <section className=' bg-no-repeat w-full h-[17.5rem] lg:h-[90vh] relative'>
-                    <img src='https://i.pinimg.com/564x/0d/1c/7e/0d1c7eb91857896df3dacf61a901c7ae.jpg' alt='Hero' className='w-full h-full object-cover' />
+                    <img src={hero} alt='Hero' className='w-full h-full object-cover ' />
                     <div className='absolute w-full h-full top-0 bg-black bg-opacity-50'>
                         <div className='flex flex-col items-center justify-center absolute inset-0 text-white w-[90%] lg:w-[80%] mx-auto'>
                             <h1 className='text-2xl lg:text-6xl text-center font-semibold'>Your Trusted Partner in Making a Difference</h1>
@@ -137,7 +137,7 @@ const HomePage = () => {
                 </section>
 
                 {/* Our Partners */}
-                <section className='border-t-[1rem] border-b-[1rem] border-[#00AEEF] py-3'>
+                <section className='border-t-[1rem] border-b-[1rem] border-[#00AEEF] py-3 z-10'>
                     <div className='px-2 lg:px-7'>
                         <h4 className='text-md md:text-lg font-semibold md:w-[60%]'>Trusted by Non-Profits, churches and Social Enterprises in 4 Countries | Verified by Industry Leaders for Secure and Impactful Fundraising: </h4>
                     </div>

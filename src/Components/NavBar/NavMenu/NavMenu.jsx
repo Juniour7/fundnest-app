@@ -54,8 +54,8 @@ const NavSm = () => {
                         <li className='py-1'>
                             <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
                         </li>
-                        <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                        <li  className='py-1'>
+                            <Link to='/about-us' onClick={() => setIsMenuOpen(false)}>About Us</Link>
                         </li>
                         <li className='py-1'>
                             <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
@@ -125,10 +125,10 @@ const NavMd = () => {
                 <div className='absolute top-16 left-0 right-0 bg-[#00AEEF] z-10'>
                     <ul className='flex flex-col items-center py-2'>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Home</Link>
+                            <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                            <Link to='/about-us' onClick={() => setIsMenuOpen(false)}>About Us</Link>
                         </li>
                         <li className='py-1'>
                             <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
@@ -263,14 +263,14 @@ const NavLg = () => {
                     </div>
                 </div>
             </section>
-            <nav className='w-full py-1 px-3 flex justify-between bg-white shadow-md'>
+            <nav className='w-full py-1 px-3 flex justify-between bg-white shadow-lg'>
                 <div className='max-w-[5.5rem]'>
                     <img src={Logo} className='w-full h-full' />
                 </div>
                 <div className='my-auto'>
                     <ul className='flex gap-3 font-semibold text-lg'>
-                        <li>
-                            <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
+                        <li className=''>
+                            <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black '}>
                                 Home
                             </NavLink>
                         </li>
@@ -334,7 +334,7 @@ const NavMenu = () => {
         <div className='hidden md:block lg:hidden'>
             <NavMd />
         </div>
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block shadow-md'>
             <NavLg />
         </div>
     </>
