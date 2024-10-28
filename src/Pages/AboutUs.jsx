@@ -164,16 +164,16 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className='basis-[50%] flex flex-wrap gap-2 pl-2 relative mt-3 md:mt-0'>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[18.875rem]'>
+                        <div className='w-[8.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[18.875rem]'>
                             <img src={flex1} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[12.875rem] relative top-[9rem]'>
+                        <div className='w-[8.345rem] h-[8.5rem] md:w-[15.375rem] md:h-[12.875rem] relative top-[5rem] md:top-[9rem]'>
                             <img src={flex2} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[12.875rem]'>
+                        <div className='w-[8.345rem] h-[8.5rem] md:w-[15.375rem] md:h-[12.875rem]'>
                             <img src={flex3} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[18.875rem] relative top-[3rem]'>
+                        <div className='w-[8.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[18.875rem] relative top-[1rem] md:top-[3rem]'>
                             <img src={flex4} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
                     </div>
