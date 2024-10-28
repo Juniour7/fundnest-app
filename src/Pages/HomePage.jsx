@@ -125,10 +125,10 @@ const HomePage = () => {
                             <h1 className='text-2xl lg:text-6xl text-center font-semibold'>Your Trusted Partner in Making a Difference</h1>
                             <p className='text-sm text-center text-[#EDF7F5] foont-light mt-[0.625rem]'>Join a global community of donors and non-profits transforming lives through secure and transparent crowdfunding</p>
                             <div className='flex justify-center gap-3 mt-[1.25rem]'>
-                                <button onClick={handleStartCampaignClick} className='bg-[#00AEEF] text-white rounded-lg py-2 px-3 md:px-6 sm:text-sm lg:text-lg shadow-md hover:bg-black transition-colors ease-in-out duration-300'>
+                                <button onClick={handleStartCampaignClick} className='bg-[#00AEEF] text-white rounded-lg py-2 px-3 md:px-6 text-sm lg:text-lg shadow-md hover:bg-black transition-colors ease-in-out duration-300'>
                                     Start Campaign
                                 </button>
-                                <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 md:px-6 text-sm md:text-lg shadow-md'>
+                                <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 md:px-6 text-sm md:text-lg shadow-md hover:bg-[#00AEEF]'>
                                     Browse Verified Causes
                                 </button>
                             </div>

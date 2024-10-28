@@ -11,7 +11,7 @@ const Layout = () => {
   return (
     <div>
         <NavMenu />
-        <main>
+        <main className='mt-[4.063rem] lg:mt-[6.25rem]'>
           <Outlet />
         </main>
         <BackToTopButton />

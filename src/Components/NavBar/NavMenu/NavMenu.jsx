@@ -10,6 +10,8 @@ import group from '../../../assets/Logo/group1.png';
 
 //Icons
 import { CiMail, CiLocationOn } from "react-icons/ci";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 import { FaWhatsapp, FaFacebookF, FaFeather   } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -43,14 +45,19 @@ const NavSm = () => {
                 <img src={Logo1} className='w-full h-full' alt='Logo' />
             </div>
             <div className='flex items-center'>
-                <button onClick={toggleMenu} className='text-4xl transition-all duration-700'>
-                    {isMenuOpen ? <FaTimes /> : <FaBars />}
+                <button
+                    onClick={toggleMenu}
+                    className="text-4xl transition-all duration-[7s] ease-in-out"
+                >
+                    <span className="transition-transform duration-[7s] ease-in-out">
+                        {isMenuOpen ? <IoClose /> : <RxHamburgerMenu />}
+                    </span>
                 </button>
             </div>
 
             {isMenuOpen && (
                 <div className='absolute top-16 left-0 right-0 bg-[#00AEEF] text-white z-50'>
-                    <ul className='flex flex-col items-center py-2 text-lg'>
+                    <ul className='flex flex-col items-center py-2 text-lg space-y-4 '>
                         <li className='py-1'>
                             <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
                         </li>
@@ -74,15 +81,16 @@ const NavSm = () => {
                         </li>
                     </ul>
                     <div className='flex flex-col items-center'>
-                        <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
-                            Start Campaign
-                        </button>
-                        <button onClick={handleSignInClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                    <button onClick={handleSignInClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign In
                         </button>
                         <button onClick={handleSignUpClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign Up
                         </button>
+                        <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                            Start Campaign
+                        </button>
+                        
                     </div>
                 </div>
             )}
@@ -198,8 +206,8 @@ const NavLg = () => {
         navigate('/fundraising-form');
       };
     return (
-        <>
-            <section className=' '>
+        <>  
+            <section className=''>
                 {/* Right Side */}
                 <div className='bg-[#00AEEF] w-full p-1 px-4 text-white flex justify-between font-sen'>
                     <div className='flex justify-center gap-2 divide-x-[0.063rem] divide-white'>
@@ -328,13 +336,13 @@ const NavLg = () => {
 const NavMenu = () => {
   return (
     <>
-        <div className='md:hidden'>
+        <div className='md:hidden fixed z-50 w-full shadow-lg top-0'>
             <NavSm />
         </div>
         <div className='hidden md:block lg:hidden'>
             <NavMd />
         </div>
-        <div className='hidden lg:block shadow-md'>
+        <div className='hidden lg:block fixed z-50 w-full top-0'>
             <NavLg />
         </div>
     </>

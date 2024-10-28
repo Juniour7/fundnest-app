@@ -11,7 +11,7 @@ import Image6 from '../../../assets/Logo/hanga.png';
 const partanerCaraousel = () => {
   return (
     <>
-        <h1 className='text-black'>hello</h1>
+      sect
     </>
   );
 }
