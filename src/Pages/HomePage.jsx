@@ -37,7 +37,7 @@ import logo4 from '../assets/Logo/4.png';
 
 //icons
 import { MdArrowForward } from "react-icons/md";
-
+import { IoIosMail } from "react-icons/io";
 
 const PartnerLogo = [
     {
@@ -128,8 +128,8 @@ const HomePage = () => {
                                 <button onClick={handleStartCampaignClick} className='bg-[#00AEEF] text-white rounded-lg py-2 px-3 md:px-6 sm:text-sm lg:text-lg shadow-md hover:bg-black transition-colors ease-in-out duration-300'>
                                     Start Campaign
                                 </button>
-                                <button onClick={handleStartCampaignClick} className='bg-black text-white rounded-lg py-2 px-3 md:px-6 text-sm md:text-lg shadow-md'>
-                                    Explore Causes
+                                <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 md:px-6 text-sm md:text-lg shadow-md'>
+                                    Browse Verified Causes
                                 </button>
                             </div>
                         </div>

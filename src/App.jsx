@@ -21,6 +21,8 @@ import UserDashBoardLayout from "./Components/UserDashBoardcomponents.js/UserDas
 // Pages
 import HomePage from "./Pages/HomePage";
 import Home from "./Pages/Home";
+import HowItWorks from "./Pages/HowItWorks";
+
 import ForgotPassword from "./Pages/Password Reset/ForgotPassword";
 import ResetPassword from "./Pages/Password Reset/ResetPassword";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
@@ -107,6 +109,7 @@ function App() {
             <Routes>
               <Route element={<Layout />}>
                 <Route path="/" element={<HomePage />}  />
+                <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/refund-policy" element={<RefundPolicy />} />
                 <Route path="/contact-us" element={<Contact />} />
 

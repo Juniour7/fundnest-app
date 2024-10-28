@@ -32,7 +32,7 @@ const StartCampaign = () => {
                 <div className='max-w-[20rem]'>
                     <img src={Image} alt="" className='w-full h-full' />
                 </div>
-                <button onClick={handleStartCampaignClick} className='bg-[#00AEEF] mt-3 md:hidden bottom-0 text-white rounded-lg py-2 px-3 text-lg flex gap-2 shadow-md  hover:bg-black duration-300 ease-in-out transition-colors'>
+                    <button onClick={handleStartCampaignClick} className='bg-[#00AEEF] mt-3 md:hidden bottom-0 text-white rounded-lg py-2 px-3 text-lg flex gap-2 shadow-md  hover:bg-black duration-300 ease-in-out transition-colors'>
                         <span className='my-auto text-xl'>
                             <FaFeather />
                         </span>

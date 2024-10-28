@@ -6,13 +6,16 @@ import { useNavigate } from 'react-router-dom';
 //Images
 import Logo from '../../../assets/Logo/FUND NEST LOGO-02.png';
 import Logo1 from '../../../assets/Logo/FUND NEST LOGO-03.png';
-
+import group from '../../../assets/Logo/group1.png';
 
 //Icons
 import { CiMail, CiLocationOn } from "react-icons/ci";
 import { FaWhatsapp, FaFacebookF, FaFeather   } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { IoIosMail } from "react-icons/io";
+import { RiCustomerService2Fill } from "react-icons/ri";
+
 
 const NavSm = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,18 +54,21 @@ const NavSm = () => {
                         <li className='py-1'>
                             <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
                         </li>
-                        {/* <li className='py-1'>
+                        <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                        </li> */}
+                        </li>
+                        <li className='py-1'>
+                            <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
+                        </li>
                         <li className='py-1'>
                             <Link to='/campaign' onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
                         </li>
-                        {/* <li className='py-1'>
+                        <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>Blog</Link>
-                        </li> */}
-                        {/* <li className='py-1'>
+                        </li>
+                        <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>Career</Link>
-                        </li> */}
+                        </li>
                         <li className='py-1'>
                             <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                         </li>
@@ -125,6 +131,9 @@ const NavMd = () => {
                             <Link onClick={() => setIsMenuOpen(false)}>About Us</Link>
                         </li>
                         <li className='py-1'>
+                            <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
+                        </li>
+                        <li className='py-1'>
                             <Link onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
                         </li>
                         <li className='py-1'>
@@ -154,6 +163,7 @@ const NavMd = () => {
             <div className={`hidden md:flex gap-3 ml-auto`}>
                 <ul className='flex gap-3 font-semibold'>
                     <li><Link>Home</Link></li>
+                    <li><Link>About Us</Link></li>
                     <li><Link>About Us</Link></li>
                     <li><Link>Campaigns</Link></li>
                     <li><Link>Blog</Link></li>
@@ -192,30 +202,38 @@ const NavLg = () => {
             <section className=' '>
                 {/* Right Side */}
                 <div className='bg-[#00AEEF] w-full p-1 px-4 text-white flex justify-between font-sen'>
-                    <div className='flex justify-center gap-2 divide-x-[1px] divide-white'>
-                        <div className='flex justify-center gap-1'>
-                            <span className='text-xl'>
-                                <CiMail />
+                    <div className='flex justify-center gap-2 divide-x-[0.063rem] divide-white'>
+                        <div className='my-auto'>
+                            <img src={group} alt="logo" className='h-[1.55rem] ' />
+                        </div>
+                        <div className='flex justify-center gap-1 py-1'>
+                            <span className='text-xl ml-[0.5rem]'>
+                                <CiLocationOn />
+                            </span>
+                            <div className='flex divide-x-[0.063rem] divide-white'>
+                                <p className='text-sm my-auto text-gray-200 pr-[0.5rem]'>
+                                    85 Great Portland Street, London
+                                </p>
+                                <p className='text-sm my-auto text-gray-200 pl-[0.5rem]'>
+                                    Kigali , Rwanda
+                                </p>
+                            </div>
+                        </div>
+                        <div className='flex justify-center items-center gap-1'>
+                            <span className='text-xl ml-[0.5rem]'>
+                                <RiCustomerService2Fill />
+                            </span>
+                            <p  className='text-sm my-auto text-gray-200 hover:text-white transition-colors duration-300 ease-in-out'>
+                                24/7 Support
+                            </p>
+                        </div>
+                        <div className='flex justify-center items-center gap-1'>
+                            <span className='text-xl ml-[0.5rem]'>
+                                <IoIosMail />
                             </span>
                             <a href='mailto:info@fundnest.org' className='text-sm my-auto text-gray-200 hover:text-white transition-colors duration-300 ease-in-out'>
                                 info@fundnest.org
                             </a>
-                        </div>
-                        <div className='flex justify-center gap-1 '>
-                            <span className='text-xl ml-[0.5rem]'>
-                                <CiLocationOn />
-                            </span>
-                            <p className='text-sm my-auto text-gray-200'>
-                                85 Great Portland Street, London
-                            </p>
-                        </div>
-                        <div className='flex justify-center gap-1 '>
-                            <span className='text-xl ml-[0.5rem]'>
-                                <CiLocationOn />
-                            </span>
-                            <p className='text-sm my-auto text-gray-200'>
-                                1 KN 78 St, Kigali Norrsken House Kigali.
-                            </p>
                         </div>
                     </div>
 
@@ -256,11 +274,16 @@ const NavLg = () => {
                                 Home
                             </NavLink>
                         </li>
-                        {/* <li>
+                        <li>
                             <NavLink to='/about-us' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
                                 About Us
                             </NavLink>
-                        </li> */}
+                        </li>
+                        <li>
+                            <NavLink to='/how-it-works' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
+                                How It Works
+                            </NavLink>
+                        </li>
                         <li>
                             <NavLink to='/campaign' className={({ isActive }) => isActive ? 'text-[#00AEEF]' : 'text-black'}>
                                 Campaigns
