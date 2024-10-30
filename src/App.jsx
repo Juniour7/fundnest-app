@@ -18,6 +18,7 @@ import Layout from "./Pages/Layout/Layout";
 import HomePage from "./Pages/HomePage";
 import AboutUs from "./Pages/AboutUs";
 import HowItWorks from "./Pages/HowItWorks";
+import Career from "./Pages/Career";
 
 import ForgotPassword from "./Pages/Password Reset/ForgotPassword";
 import ResetPassword from "./Pages/Password Reset/ResetPassword";
@@ -109,6 +110,8 @@ function App() {
                 <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/refund-policy" element={<RefundPolicy />} />
                 <Route path="/contact-us" element={<Contact />} />
+                <Route path="/career" element={<Career />} />
+                
 
                 <Route path="/know-your-customer" element={<KnowYourCustomer />} />
                 <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />

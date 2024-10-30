@@ -74,7 +74,7 @@ const NavSm = () => {
                             <Link onClick={() => setIsMenuOpen(false)}>Blog</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Career</Link>
+                            <Link to='/career' onClick={() => setIsMenuOpen(false)}>Career</Link>
                         </li>
                         <li className='py-1'>
                             <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
@@ -271,7 +271,7 @@ const NavLg = () => {
                     </div>
                 </div>
             </section>
-            <nav className='w-full py-1 px-3 flex justify-between bg-white shadow-lg'>
+            <nav className='w-full py-1 px-3 flex justify-between bg-white shadow-md'>
                 <div className='max-w-[5.5rem]'>
                     <img src={Logo} className='w-full h-full' />
                 </div>

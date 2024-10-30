@@ -71,7 +71,7 @@ const AboutUs = () => {
         </Helmet>
         <body className='font-sen bg-[#FFFCF7]'>
             {/* Hero Section */}
-            <section className='bg-[#F5EFE0] pt-5 h-[350px] lg:h-[90vh] relative'>
+            <section className='bg-[#F5EFE0] pt-5 h-[21.875rem] lg:h-[90vh] relative'>
                 <h1 className='text-center text-2xl md:text-4xl font-semibold'>World's Fundraising Platform</h1>
                 <p className='mt-2 text-sm text-[#5F5F75] text-center'>Empowering communities to create lasting change through collective giving and impactful campaigns.</p>
                 <div className='absolute bottom-0 flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2'>

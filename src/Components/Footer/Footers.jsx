@@ -66,10 +66,10 @@ const Footers = () => {
                         <h1 className='text-[#00AEEF] font-bold text-2xl'>Company</h1>
                         <ul className='mt-6 text-left space-y-3'>
                             <li>
-                                <Link to=''>About</Link>
+                                <Link to='/about-us'>About</Link>
                             </li>
                             <li>
-                                <Link to=''>Contact Us</Link>
+                                <Link to='/contact-us'>Contact Us</Link>
                             </li>
                             <li>
                                 <Link to=''>Careers</Link>
@@ -81,7 +81,7 @@ const Footers = () => {
                                 <Link to=''>Testimonials</Link>
                             </li>
                             <li>
-                                <Link to=''>Support Desk</Link>
+                                <Link to='/contact-us'>Support Desk</Link>
                             </li>
                         </ul>
                     </div>
@@ -92,9 +92,9 @@ const Footers = () => {
                     <div>
                         <h1 className='text-[#00AEEF] font-bold text-2xl'>Resource</h1>
                         <ul className='mt-6 text-left space-y-3 underline underline-offset-4'>
-                            {/* <li>
+                            <li>
                                 <Link to=''>Guide</Link>
-                            </li> */}
+                            </li>
                             <li>
                                 <Link to='/refund-policy'>Refund Policy</Link>
                             </li>
