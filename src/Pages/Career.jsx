@@ -1,8 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async';
 
-//components
-import MailingList from '../Components/HomComponents/MailingList';
 
 //icons
 import { FaArrowRight } from "react-icons/fa6";
@@ -222,9 +220,6 @@ const Career = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Mailing List */}
-            <MailingList />
         </body>
     </>
   );

@@ -226,9 +226,6 @@ const HomePage = () => {
                 {/* Testimonials */}
                 <Testimonials />
 
-                {/* Mailing List */}
-                <MailingList />
-
                 {/* Our Partners */}
                 <section className='py-11 px-3'>
                     <div className='grid grid-cols-2 lg:grid-cols-4 justify-center gap-3'>

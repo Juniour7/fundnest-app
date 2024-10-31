@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 import NavMenu from '../../Components/NavBar/NavMenu/NavMenu';
 import Footers from '../../Components/Footer/Footers';
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
+import MailingList from '../../Components/HomComponents/MailingList';
 import BackToTopButton from '../../Components/HomComponents/BackToTop';
 
 const Layout = () => {
@@ -16,6 +17,7 @@ const Layout = () => {
         </main>
         <BackToTopButton />
         <ScrollToTop />
+        <MailingList />
         <Footers />
     </div>
   );

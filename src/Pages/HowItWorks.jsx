@@ -2,8 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-//components
-import MailingList from '../Components/HomComponents/MailingList';
 
 //images
 import hero from '../assets/HIW/hero.png';
@@ -198,9 +196,6 @@ const HowItWorks = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Mailing List */}
-            <MailingList />
         </body>
     </>
   )

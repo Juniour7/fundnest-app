@@ -19,6 +19,7 @@ import HomePage from "./Pages/HomePage";
 import AboutUs from "./Pages/AboutUs";
 import HowItWorks from "./Pages/HowItWorks";
 import Career from "./Pages/Career";
+import Blog from "./Pages/Blog";
 
 import ForgotPassword from "./Pages/Password Reset/ForgotPassword";
 import ResetPassword from "./Pages/Password Reset/ResetPassword";
@@ -111,7 +112,7 @@ function App() {
                 <Route path="/refund-policy" element={<RefundPolicy />} />
                 <Route path="/contact-us" element={<Contact />} />
                 <Route path="/career" element={<Career />} />
-                
+                <Route path="/blog" element={<Blog />} />
 
                 <Route path="/know-your-customer" element={<KnowYourCustomer />} />
                 <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />

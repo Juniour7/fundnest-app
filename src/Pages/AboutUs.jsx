@@ -1,8 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-//components
-import MailingList from '../Components/HomComponents/MailingList';
 
 
 //images
@@ -188,9 +186,6 @@ const AboutUs = () => {
                     <img src={hero1} alt="" className='w-[100%] h-[200px] md:h-full md:w-[90%]' />
                 </div>
             </section>
-
-            {/* Mailing List */}
-            <MailingList />
         </body>
     </>
   )

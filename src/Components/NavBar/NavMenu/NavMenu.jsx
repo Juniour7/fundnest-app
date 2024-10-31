@@ -71,7 +71,7 @@ const NavSm = () => {
                             <Link to='/campaign' onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                            <Link to='/blog' onClick={() => setIsMenuOpen(false)}>Blog</Link>
                         </li>
                         <li className='py-1'>
                             <Link to='/career' onClick={() => setIsMenuOpen(false)}>Career</Link>
@@ -142,16 +142,16 @@ const NavMd = () => {
                             <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
+                            <Link to='/campaign' onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                            <Link to='/blog' onClick={() => setIsMenuOpen(false)}>Blog</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Career</Link>
+                            <Link to='/career' onClick={() => setIsMenuOpen(false)}>Career</Link>
                         </li>
                         <li className='py-1'>
-                            <Link onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+                            <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                         </li>
                     </ul>
                     <div className='flex flex-col items-center'>
