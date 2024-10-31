@@ -120,7 +120,7 @@ const Blog = () => {
       <body className='font-sen'>
         {/* Hero Section */}
         <section className='pt-5 h-[21.875rem] lg:h-[85vh] relative'>
-          <h1 className='text-center text-2xl md:text-4xl font-semibold'>Join Us in Empowering Change Through Crowdfunding</h1>
+          <h1 className='text-center text-2xl md:text-4xl font-semibold px-[1px] '>Join Us in Empowering Change Through Crowdfunding</h1>
           <p className='mt-2 text-sm text-[#5F5F75] text-center'>Be a part of a dynamic team that's revolutionizing fundraising for non-profits and social enterprises worldwide.</p>
           <div className='absolute bottom-0'>
             <img src={hero} alt="" className='w-[100%] h-[8.125rem] md:h-full md:w-[100%]' />
@@ -152,7 +152,7 @@ const Blog = () => {
               {BlogCard.map((Data, index) => (
                 <div key={index} className='bg-white rounded-md shadow-md md:flex '> 
                   <div className='basis-[35%] rounded-tl-md rounded-bl-md'>
-                    <img src={Data.Photo} alt="" className='w-full h-[250px] md:h-full object-cover' />
+                    <img src={Data.Photo} alt="" className='w-full h-[14.625rem] md:h-[16.875rem] object-cover md:rounded-tl-md md:rounded-bl-md' />
                   </div>
                   <div className='p-2 md:p-3 basis-[70%]'>
                     <div className='flex gap-3'>
