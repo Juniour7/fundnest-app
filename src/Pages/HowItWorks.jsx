@@ -93,7 +93,7 @@ const HowItWorks = () => {
         </Helmet>
         <body className='font-sen'>
             {/* Hero Section */}
-            <section className=' bg-no-repeat w-full h-[17.5rem] lg:h-[90vh] relative'>
+            <section className=' bg-no-repeat w-full h-[17.5rem] md:h-[31.25rem] lg:h-[90vh] relative'>
                 <img src={hero} alt='Hero' className='w-full h-full object-cover' />
                 <div className='absolute w-full h-full top-0 bg-black bg-opacity-50'>
                     <div className='flex flex-col items-center justify-center absolute inset-0 text-white w-[90%] lg:w-[80%] mx-auto'>
@@ -114,7 +114,7 @@ const HowItWorks = () => {
             {/* Welcoming  */}
             <section className='border-t-[1.25rem] border-[#00AEEF] font-sen'>
                 <div className='w-[90%] mx-auto py-4'>
-                    <h1 className='text-center text-[#00AEEF] font-bold text-3xl md:text-5xl'>EMPOWERING DREAMS, TOGETHER</h1>
+                    <h1 className='text-center text-[#00AEEF] font-bold text-3xl lg:text-5xl'>EMPOWERING DREAMS, TOGETHER</h1>
                     <p className='mt-2'>FundNest brings together passionate fundraisers and compassionate donors to make meaningful change happen. Whether you're starting a cause or  supporting one, our platform makes it easy to create lasting impact in  your community and beyond.</p>
                 </div>
                 <div className='mt-4 w-full h-[15.625rem] lg:h-[90vh]'>
@@ -126,7 +126,7 @@ const HowItWorks = () => {
             {/* How It Works */}
             <section>
                 <div className='py-4'>
-                    <h1 className='text-center text-[#00AEEF] font-bold text-3xl md:text-5xl'>HOW IT WORKS</h1>
+                    <h1 className='text-center text-[#00AEEF] font-bold text-3xl lg:text-5xl'>HOW IT WORKS</h1>
                 </div>
 
                 {/* For Fundraisers */}

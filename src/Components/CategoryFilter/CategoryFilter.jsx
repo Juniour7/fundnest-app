@@ -88,7 +88,7 @@ const CategoryFilter = () => {
                 <title>Campaigns | Fund Nest</title>
                 <meta name="description" content="Our Campaigns" />
             </Helmet>
-            <div id="learning" className="font-sen pt-11 w-[90%] lg:w-[85%] mx-auto">
+            <div id="learning" className="font-sen pt-3 md:pt-11 w-[90%] lg:w-[85%] mx-auto">
                 <section className="my-6">
                     <h1 className="text-3xl font-semibold">Campaigns</h1>
                     <section className="my-3">

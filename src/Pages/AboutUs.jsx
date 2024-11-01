@@ -69,7 +69,7 @@ const AboutUs = () => {
         </Helmet>
         <body className='font-sen bg-[#FFFCF7]'>
             {/* Hero Section */}
-            <section className='bg-[#F5EFE0] pt-5 h-[21.875rem] lg:h-[90vh] relative'>
+            <section className='bg-[#F5EFE0] pt-5 h-[21.875rem] md:h-[25rem] lg:h-[90vh] relative'>
                 <h1 className='text-center text-2xl md:text-4xl font-semibold'>World's Fundraising Platform</h1>
                 <p className='mt-2 text-sm text-[#5F5F75] text-center'>Empowering communities to create lasting change through collective giving and impactful campaigns.</p>
                 <div className='absolute bottom-0 flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2'>
@@ -79,10 +79,10 @@ const AboutUs = () => {
 
             {/* Why Fund Nest?     */}
             <section className='py-16'>
-                <div className='w-[90%] mx-auto gap-3 md:flex items-center justify-center'>
+                <div className='w-[90%] mx-auto gap-3 lg:flex items-center justify-center'>
                     <div className='basis-[40%] space-y-4 mb-4 md:mb-0'>
                         <p className='text-sm text-[#5F5F75]'>Why use Fund Nest platform?</p>
-                        <h1 className='font-bold text-xl md:text-3xl md:w-[60%]'>Fund Nest is more than a platform—it's a movement. We’re here to amplify the voices of individuals, non-profits, and social enterprises, helping them turn their visions into impactful realities.</h1>
+                        <h1 className='font-bold text-xl md:text-3xl lg:w-[60%]'>Fund Nest is more than a platform—it's a movement. We’re here to amplify the voices of individuals, non-profits, and social enterprises, helping them turn their visions into impactful realities.</h1>
                     </div>
 
                     <div className='basis-[45%] grid md:grid-cols-2 gap-3'>
