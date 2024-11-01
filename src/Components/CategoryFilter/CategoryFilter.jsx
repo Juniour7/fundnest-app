@@ -131,7 +131,13 @@ const CategoryFilter = () => {
 
                 {/* Campaign Display Grid */}
                 <div className="relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-[35px]">
-                    {filteredCampaigns.length === 0 && <p>No campaigns available.</p>}
+                    {filteredCampaigns.length === 0 && 
+                        <div className="text-[#5F5F75]">
+                            <p className="text-xl font-semibold ">No campaigns found.</p>
+                            <p className=" mt-2 text-sm">Try adjusting the filters or search terms to explore more campaigns.</p>
+                            <img src="https://i.pinimg.com/originals/0e/c0/db/0ec0dbf1e9a008acb9955d3246970e15.gif" alt="" />
+                        </div>
+                    }
                     {filteredCampaigns.map((campaign) => (
                         <div key={campaign.id} onClick={() => handleViewInformation(campaign)} className="bg-white relative shadow-md font-sen transition-all duration-300 ease-linear hover:shadow-lg rounded-md h-[550px]">
                         <div className="w-full mx-auto h-[12.5rem] md:h-[13.75rem] overflow-hidden rounded-tr-md rounded-tl-md">
