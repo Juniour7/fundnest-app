@@ -134,17 +134,26 @@ const CategoryFilter = () => {
                     {filteredCampaigns.length === 0 && <p>No campaigns available.</p>}
                     {filteredCampaigns.map((campaign) => (
                         <div key={campaign.id} onClick={() => handleViewInformation(campaign)} className="bg-white relative shadow-md font-sen transition-all duration-300 ease-linear hover:shadow-lg rounded-md h-[550px]">
-                            <div className="w-full h-[12.5rem] md:h-[13.75rem] overflow-hidden rounded-tr-md rounded-tl-md">
-                                <img src={campaign.poster_image_url} alt={campaign.campaign_name} className="w-full h-full object-cover hover:scale-110 transition-all duration-1000 ease-in-out cursor-pointer" />
-                            </div>
-                            <div className="p-2">
-                                <p className="text-sm text-[#5F5F75]">{campaign.campaign_fundraising_type}</p>
+                        <div className="w-full mx-auto h-[12.5rem] md:h-[13.75rem] overflow-hidden rounded-tr-md rounded-tl-md">
+                            <img src={campaign.poster_image_url} alt={campaign.campaign_name} className="w-full h-full rounded-tr-md rounded-tl-md object-cover hover:scale-110 transition-all duration-1000 ease-in-out cursor-pointer" />
+                        </div>
+                        <div className="p-2">
+                            <p className="text-sm text-[#5F5F75]">{campaign.campaign_fundraising_type}</p>
+                            <div className="h-[4.938rem]">
                                 <h1 className="text-lg font-semibold mt-[0.4rem]">{campaign.campaign_name}</h1>
-                                <p className="font-light text-sm text-[#5F5F75] mt-[0.625rem] line-clamp-3">{campaign.campaign_description}</p>
+                            </div>
+                            <div className="h-[70px] overflow-hidden mt-[0.625rem] w-full">
+                                <p className="font-light text-sm text-[#5F5F75] overflow-hidden text-ellipsis line-clamp-3">
+                                    {campaign.campaign_description}
+                                </p>
+                            </div>
+                            <div className="mt-[1.25rem]">
                                 <p className="mt-2 text-sm text-gray-700">
                                     ${campaign.current_amount} raised of ${campaign.target_amount}
                                 </p>
                                 <ProgressBar amountRaised={campaign.current_amount} targetAmount={campaign.target_amount} />
+                            </div>
+                            <div className="flex flex-col justify-center items-center text-center">
                                 <button
                                     className="text-white absolute bottom-4 bg-[#4FC0E8] text-xl font-medium w-[50%] py-1 border border-[#4FC0E8] rounded-lg mt-[1.25rem] hover:bg-black hover:text-white transition"
                                     onClick={campaign.current_amount >= campaign.target_amount ? null : handleDonateClick}
@@ -154,6 +163,8 @@ const CategoryFilter = () => {
                                 </button>
                             </div>
                         </div>
+                    </div>
+                    
                     ))}
                 </div>
             </div>
