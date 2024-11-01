@@ -121,11 +121,16 @@ const NavMd = () => {
     return (
         <nav className='w-full py-1 px-3 flex justify-between items-center bg-[#00AEEF] text-white'>
             <div className='max-w-[5.5rem]'>
-                <img src={Logo} className='w-full h-full' alt='Logo' />
+                <img src={Logo1} className='w-full h-full' alt='Logo' />
             </div>
             <div className='flex items-center'>
-                <button onClick={toggleMenu} className='text-white'>
-                    {isMenuOpen ? <FaTimes /> : <FaBars />}
+                <button
+                    onClick={toggleMenu}
+                    className="text-5xl transition-all duration-[7s] ease-in-out"
+                >
+                    <span className="transition-transform duration-[7s] ease-in-out">
+                        {isMenuOpen ? <IoClose /> : <RxHamburgerMenu />}
+                    </span>
                 </button>
             </div>
 
@@ -167,29 +172,6 @@ const NavMd = () => {
                     </div>
                 </div>
             )}
-
-            <div className={`hidden md:flex gap-3 ml-auto`}>
-                <ul className='flex gap-3 font-semibold'>
-                    <li><Link>Home</Link></li>
-                    <li><Link>About Us</Link></li>
-                    <li><Link>About Us</Link></li>
-                    <li><Link>Campaigns</Link></li>
-                    <li><Link>Blog</Link></li>
-                    <li><Link>Career</Link></li>
-                    <li><Link>Contact Us</Link></li>
-                </ul>
-                <div className='flex gap-3'>
-                    <button onClick={handleStartCampaignClick} className='bg-[#00AEEF] text-white rounded-lg py-2 px-3 text-sm shadow-md'>
-                        Start Campaign
-                    </button>
-                    <button onClick={handleSignInClick} className='bg-[#00AEEF] text-white rounded-lg py-2 px-3 text-sm shadow-md'>
-                        Sign In
-                    </button>
-                    <button onClick={handleSignUpClick} className='bg-[#00AEEF] text-white rounded-lg py-2 px-3 text-sm shadow-md'>
-                        Sign Up
-                    </button>
-                </div>
-            </div>
         </nav>
     );
 };
@@ -336,10 +318,10 @@ const NavLg = () => {
 const NavMenu = () => {
   return (
     <>
-        <div className='md:hidden fixed z-50 w-full shadow-lg top-0'>
+        <div className='md:hidden fixed z-50 w-full shadow-md top-0'>
             <NavSm />
         </div>
-        <div className='hidden md:block lg:hidden'>
+        <div className='hidden md:block lg:hidden fixed z-50 top-0 w-full shadow-md'>
             <NavMd />
         </div>
         <div className='hidden lg:block fixed z-50 w-full top-0'>

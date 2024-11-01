@@ -1,6 +1,4 @@
 import React from 'react';
-
-//components
 import { Helmet } from 'react-helmet-async';
 
 //icons

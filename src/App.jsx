@@ -20,6 +20,7 @@ import AboutUs from "./Pages/AboutUs";
 import HowItWorks from "./Pages/HowItWorks";
 import Career from "./Pages/Career";
 import Blog from "./Pages/Blog";
+import FundCampaign from "./Pages/FundCampaign";
 
 import ForgotPassword from "./Pages/Password Reset/ForgotPassword";
 import ResetPassword from "./Pages/Password Reset/ResetPassword";
@@ -31,7 +32,7 @@ import FundraisingForm from "./Pages/FundraisingForm";
 import AntiMoneyLaundering from "./Pages/Company Policies/AntiMoneyLaundering";
 import RefundPolicy from "./Pages/Company Policies/RefundPolicy";
 import KnowYourCustomer from "./Pages/Company Policies/KnowYourCustomer";
-import Contact from "./Pages/Contact";
+import Contacts from "./Pages/Contacts";
 
 // Admin Dashboard Components
 import AdminCampaigns from "./Components/admindashboard/AdminCampaigns";
@@ -110,9 +111,10 @@ function App() {
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/refund-policy" element={<RefundPolicy />} />
-                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/contact-us" element={<Contacts />} />
                 <Route path="/career" element={<Career />} />
                 <Route path="/blog" element={<Blog />} />
+                {/* <Route path="/campaign" element={<FundCampaign />} /> */}
 
                 <Route path="/know-your-customer" element={<KnowYourCustomer />} />
                 <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />

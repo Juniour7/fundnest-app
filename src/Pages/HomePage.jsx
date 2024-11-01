@@ -8,7 +8,7 @@ import HomeCampaigns from '../Components/HomComponents/HomeCampaigns';
 import AskedQuery from '../Components/HomComponents/AskedQuery';
 import Testimonials from '../Components/HomComponents/Testimonials';
 import MailingList from '../Components/HomComponents/MailingList';
-import partanerCaraousel from '../Components/HomComponents/PartnerCarousel.jsx/partanerCaraousel';
+import partnerCaraousel from '../Components/HomComponents/PartnerCarousel.jsx/partanerCaraousel';
 
 //images
 import hero from '../assets/slideshow/hero.jpg'
@@ -118,7 +118,7 @@ const HomePage = () => {
             </Helmet>
             <body className='font-sen'>
                 {/* Hero Section */}
-                <section className=' bg-no-repeat w-full h-[17.5rem] lg:h-[90vh] relative'>
+                <section className=' bg-no-repeat w-full h-[17.5rem] md:h-[50vh] lg:h-[90vh] relative'>
                     <img src={hero} alt='Hero' className='w-full h-full object-cover ' />
                     <div className='absolute w-full h-full top-0 bg-black bg-opacity-50'>
                         <div className='flex flex-col items-center justify-center absolute inset-0 text-white w-[90%] lg:w-[80%] mx-auto'>
@@ -149,30 +149,30 @@ const HomePage = () => {
                         ))} */}
                         
                     </div>
-                    <partanerCaraousel />
+                    <partnerCaraousel />
                 </section>
 
                 {/* Get Started */}
-                <section className='w-[90%] md:w-[85%] mx-auto py-11 md:flex justify-center '>
-                    <div className='basis-[50%] flex flex-wrap gap-2 md:gap-3 relative mb-4 md:mb-[7rem]'>
-                        <div className='w-[9.375rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] overflow-hidden rounded-lg'>
+                <section className='w-[90%] lg:w-[85%] mx-auto py-11 md:flex justify-center '>
+                    <div className='basis-[50%] flex flex-wrap gap-2 md:gap-3 relative mb-4 lg:mb-[7rem]'>
+                        <div className='w-[9.375rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] overflow-hidden rounded-lg'>
                             <img src={rectangle1} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
+                        <div className='w-[9.345rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
                             <img src={rectangle2} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] overflow-hidden rounded-lg'>
+                        <div className='w-[9.345rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] overflow-hidden rounded-lg'>
                             <img src={rectangle3} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
-                        <div className='w-[9.345rem] h-[12.5rem] md:w-[13.375rem] md:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
+                        <div className='w-[9.345rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>
                             <img src={rectangle4} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
                     </div>
 
                     {/* Left Side */}
-                    <div className='basis-[65%] pt-[3rem] md:space-y-[4rem]'>
-                        <h1 className='text-2xl md:text-4xl font-bold w-[90%] md:mb-[4rem]'>We are the Powerful, <span className='text-[#00AEEF]'>Free Fundraising</span> Platform</h1>
-                        <p className='mt-4 mb-4 md:mb-[4rem]'>Unlock the power of seamless fundraising with our proven, multi-purpose crowdfunding platform. Designed for non-profits and individuals, Fund Nest helps you raise more, engage donors effectively, and achieve greater impact with ease. Boost your mission today!</p>
+                    <div className='basis-[50%] lg:basis-[65%] pt-[3rem] lg:space-y-[4rem]'>
+                        <h1 className='text-2xl lg:text-4xl font-bold w-[90%] mb-[1rem] md:mb-[2rem] lg:mb-[4rem]'>We are the Powerful, <span className='text-[#00AEEF]'>Free Fundraising</span> Platform</h1>
+                        <p className='lg:mt-4 mb-4 md:mb-[4rem] text-sm lg:text-base'>Unlock the power of seamless fundraising with our proven, multi-purpose crowdfunding platform. Designed for non-profits and individuals, Fund Nest helps you raise more, engage donors effectively, and achieve greater impact with ease. Boost your mission today!</p>
                         <div className=''>
                             <ul className='font-sen space-y-3'>
                                 <li className='flex items-center gap-2'>

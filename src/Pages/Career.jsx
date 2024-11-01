@@ -136,7 +136,7 @@ const Career = () => {
             {/* Talented People */}
             <section className='bg-[#F5EFE0] py-7'>
                 <div className='w-[90%] mx-auto'>
-                    <h1 className='text-4xl font-semibold text-center mt-5'>We're looking for talened people</h1>
+                    <h1 className='text-4xl font-semibold text-center mt-5'>We're looking for talented people</h1>
                     <p className='text-sm text-[#5F5F75] text-center w-[80%] mx-auto mt-3'>We're building an easy, impactful platform to empower people worldwide to share their stories and rally support—and we'd love your help in making it a reality!</p>
                     <div className='w-[90%] mx-auto mt-6 rounded-md'>
                         <img src={image2} alt="" className='rounded-md h-[12.5rem] lg:h-[25rem] w-full object-cover' />
