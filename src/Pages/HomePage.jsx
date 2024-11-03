@@ -118,7 +118,7 @@ const HomePage = () => {
             </Helmet>
             <body className='font-sen'>
                 {/* Hero Section */}
-                <section className=' bg-no-repeat w-full h-[17.5rem] md:h-[50vh] lg:h-[90vh] relative'>
+                <section className=' bg-no-repeat w-full h-[17.5rem] md:h-[40vh] lg:h-[90vh] relative'>
                     <img src={hero} alt='Hero' className='w-full h-full object-cover ' />
                     <div className='absolute w-full h-full top-0 bg-black bg-opacity-50'>
                         <div className='flex flex-col items-center justify-center absolute inset-0 text-white w-[90%] lg:w-[80%] mx-auto'>
@@ -200,7 +200,7 @@ const HomePage = () => {
                 {/* Trust Now */}
                 <section className='bg-[#00AEEF] py-5 px-3 text-white'>
                     <h1 className='text-center text-2xl md:text-3xl font-bold'>WHY TRUST FUNDNEST</h1>
-                    <div className='w-[90%] mx-auto md:w-full mt-5 grid lg:grid-cols-5 gap-2'>
+                    <div className='w-[90%] md:w-[85%] lg:w-[90%] mx-auto  mt-5 grid md:grid-cols-2 lg:grid-cols-5 gap-2'>
                         {TrustData.map((Data,index) => (
                             <div key={index} className='bg-white px-2 py-3  shadow-md  group hover:bg-red-800'>
                                 <div className='flex flex-col justify-center items-center '>

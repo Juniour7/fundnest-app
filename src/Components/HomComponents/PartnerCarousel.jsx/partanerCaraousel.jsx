@@ -27,7 +27,7 @@ const PartnerCarousel = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -46,8 +46,8 @@ const PartnerCarousel = () => {
 
   return (
     <>
-      <section className='w-[95%] md:w-[90%] mx-auto mt-3'>
-        <Slider {...settings}>
+      <section className='w-[95%] lg:w-[90%] mx-auto mt-3'>
+        <Slider {...settings} className='overflow-hidden'>
           <div>
             <img src={Image1} alt="Microsoft" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>

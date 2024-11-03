@@ -58,8 +58,9 @@ const NavSm = () => {
             </div>
 
             {isMenuOpen && (
-                <div className='absolute top-16 left-0 right-0 bg-[#00AEEF] text-white z-50'>
-                    <ul className='flex flex-col items-center py-2 text-lg space-y-4 '>
+                <div className={`absolute top-16 left-0 right-0 bg-black text-white z-50 h-screen origin-right transform transition-transform duration-500 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                    
+                    <ul className='flex flex-col  py-4 text-lg space-y-4 divide-y-[0.001rem] text-center'>
                         <li className='py-1'>
                             <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
                         </li>
@@ -82,14 +83,14 @@ const NavSm = () => {
                             <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                         </li>
                     </ul>
-                    <div className='flex flex-col items-center'>
-                    <button onClick={handleSignInClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                    <div className='flex justify-center items-center'>
+                        <button onClick={handleSignInClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign In
                         </button>
-                        <button onClick={handleSignUpClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                        <button onClick={handleSignUpClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign Up
                         </button>
-                        <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                        <button onClick={handleStartCampaignClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Start Campaign
                         </button>
                         

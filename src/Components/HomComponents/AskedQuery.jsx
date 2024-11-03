@@ -58,9 +58,9 @@ const AskedQuery = () => {
 
   return (
     <div id="faq" className="py-11  font-rubik">
-      <div className=" lg:flex justify-center gap-2 w-[90%] mx-auto">
+      <div className=" md:flex justify-center gap-2 w-[90%] mx-auto">
         <div className="basis-[45%] relative">
-            <h1 className="text-2xl md:text-4xl font-semibold">Find Answers to Your Donation Questions</h1>
+            <h1 className="text-2xl lg:text-4xl font-semibold">Find Answers to Your Donation Questions</h1>
             <p className="mt-4 text-sm">Et felis vitae ac venenatis lacus cras etiam risus scelerisque auctor adipiscing in a porta</p>
             <div className="absolute left-10 hidden md:block">
                 <img src={Shape} alt="" className=""/>
