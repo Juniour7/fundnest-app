@@ -104,7 +104,7 @@ const NavSm = () => {
                         <button onClick={handleSignUpClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign Up
                         </button>
-                        <button onClick={handleStartCampaignClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                        <button onClick={() => {handleStartCampaignClick(); setIsMenuOpen(false); }}   className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Start Campaign
                         </button>
                         
@@ -193,14 +193,14 @@ const NavMd = () => {
                         </Link>
                     </ul>
                     <div className='flex justify-center items-center'>
-                        <button onClick={handleStartCampaignClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
-                            Start Campaign
-                        </button>
                         <button onClick={handleSignInClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign In
                         </button>
                         <button onClick={handleSignUpClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign Up
+                        </button>
+                        <button onClick={() => {handleStartCampaignClick(); setIsMenuOpen(false); }} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                            Start Campaign
                         </button>
                     </div>
                 </div>
