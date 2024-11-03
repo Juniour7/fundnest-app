@@ -156,7 +156,7 @@ const Blog = () => {
                   </div>
                   <div className='p-2 md:p-3 basis-[70%]'>
                     <div className='flex gap-3'>
-                      <button className='bg-[#00AEEF] text-white px-3 py-2 rounded-lg text-sm'>{Data.Category}</button>
+                      {/* <button className='bg-[#00AEEF] text-white px-3 py-2 rounded-lg text-sm'>{Data.Category}</button> */}
                       <button className='bg-[#F2EAE1] text-[#5F5F75] text-sm font-semibold px-3 py-2 flex items-center gap-2 rounded-md cursor-not-allowed'>
                         <span>
                           <FaRegCalendarAlt  />

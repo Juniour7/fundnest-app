@@ -19,7 +19,7 @@ const StartCampaign = () => {
   return (
     <>
         <section className='bg-[#00AEEF] py-9  font-sen'>
-            <div className='bg-[#EBF0EF] rounded-md py-4 px-7 w-[90%] md:w-[80%] mx-auto md:flex justify-center  '>
+            <div className='bg-[#EBF0EF] rounded-md py-4 px-7 w-[90%] md:w-[90%] mx-auto md:flex justify-center  '>
                 <div className='relative basis-[]'>
                     <h1 className='text-[#00AEEF] text-xl font-semibold'>Ready to Make Your Impact?</h1>
                     <p className='text-[#667672] text-base mt-4 mb-6 w-[80%] lg:w-[65%]'>Join changemakers worldwide who are launching impactful campaigns, mobilizing passionate supporters, and creating lasting solutions. Our platform connects you with decision-makers and donors ready to support your cause.</p>

@@ -39,24 +39,24 @@ const Holders = () => {
 
   return (
     <>
-        <section className='py-3 px-2 '>
+        <section className='py-3 px-2 space-y-2 '>
             <div className='grid grid-cols-8 gap-2 justify-center items-center'>
                 {Holders1.map((logo, index) => (
-                    <div className='lg:w-[100px] lg:h-[50px]'>
+                    <div className='lg:w-[8.125rem] lg:h-[4.375rem]'>
                         <img key={index} src={logo} alt="" loading="lazy" className='w-full h-full object-contain'/>
                     </div>
                 ))}
             </div>
             <div className='grid grid-cols-9 gap-2 justify-center items-center'>
                 {Holders2.map((logo, index) => (
-                    <div className='lg:w-[100px] lg:h-[50px] '>
+                    <div className='lg:w-[8.125rem] lg:h-[4.375rem] '>
                         <img key={index} src={logo} alt="" loading="lazy" className='w-full h-full object-contain'/>
                     </div>
                 ))}
             </div>
             <div className='grid grid-cols-9 gap-2 justify-center items-center'>
                 {Holders3.map((logo, index) => (
-                    <div className=' lg:w-[100px] lg:h-[50px]'>
+                    <div className=' lg:w-[8.125rem] lg:h-[4.375rem]'>
                         <img key={index} src={logo} alt="" loading="lazy" className='w-full h-full object-contain'/>
                     </div>
                 ))}

@@ -226,9 +226,9 @@ const NavLg = () => {
                 {/* Right Side */}
                 <div className='bg-[#00AEEF] w-full p-1 px-4 text-white flex justify-between font-sen'>
                     <div className='flex justify-center gap-2 divide-x-[0.063rem] divide-white'>
-                        <div className='my-auto'>
+                        {/* <div className='my-auto'>
                             <img src={group} alt="logo" className='h-[1.55rem] ' />
-                        </div>
+                        </div> */}
                         <div className='flex justify-center gap-1 py-1'>
                             <span className='text-xl ml-[0.5rem]'>
                                 <CiLocationOn />

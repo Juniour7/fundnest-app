@@ -138,7 +138,7 @@ const HomePage = () => {
 
                 {/* Our Partners */}
                 <section className='border-t-[1rem] border-b-[1rem] border-[#00AEEF] py-3 z-10'>
-                    <div className='px-2 lg:w-[95%] mx-auto'>
+                    <div className='px-2 lg:w-[90%] mx-auto'>
                         <h4 className='text-md md:text-lg font-semibold md:w-[60%]'>Trusted by Non-Profits, churches and Social Enterprises in 4 Countries | Verified by Industry Leaders for Secure and Impactful Fundraising: </h4>
                         <h4 className='text-sm mt-3 text-[#00AEEF]'>Powered by</h4>                    
                     </div>
@@ -146,7 +146,7 @@ const HomePage = () => {
                 </section>
 
                 {/* Get Started */}
-                <section className='w-[90%] lg:w-[85%] mx-auto py-11 md:flex justify-center '>
+                <section className='w-[90%] mx-auto py-11 md:flex justify-center '>
                     <div className='basis-[50%] flex flex-wrap gap-2 md:gap-3 relative mb-4 lg:mb-[7rem]'>
                         <div data-aos="zoom-in"  data-aos-duration="3000" className='w-[9.375rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] overflow-hidden rounded-lg'>
                             <img src={rectangle1} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />

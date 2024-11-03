@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation  } from 'react-router-dom';
 
 //components
 import NavMenu from '../../Components/NavBar/NavMenu/NavMenu';
@@ -9,7 +9,11 @@ import MailingList from '../../Components/HomComponents/MailingList';
 import Holders from '../../Components/HomComponents/Holders';
 import BackToTopButton from '../../Components/HomComponents/BackToTop';
 
+
 const Layout = () => {
+  const location = useLocation();
+  const showHolders = ["/", "/about-us", "/contact-us"].includes(location.pathname);
+
   return (
     <div>
         <NavMenu />
@@ -19,7 +23,7 @@ const Layout = () => {
         <BackToTopButton />
         <ScrollToTop />
         <MailingList />
-        <Holders />
+        {showHolders && <Holders />}
         <Footers />
     </div>
   );

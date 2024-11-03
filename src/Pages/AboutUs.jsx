@@ -111,7 +111,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className='h-[9.375rem] md:h-[21.875rem]'>
-                    <img src={image1} alt="" className='rounded-md w-full h-full  object-cover'/>
+                    <img src={image1} alt="" className='rounded-md w-full h-full  object-cover '/>
                 </div>
             </section>
 
@@ -128,15 +128,17 @@ const AboutUs = () => {
                         d="M0,128L80,144C160,160,320,192,480,181.3C640,171,800,117,960,101.3C1120,85,1280,107,1360,117.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                     ></path>
                 </svg>
-                <div className='bg-[#00AEEF] pb-5 text-white font-sen'>
+                <div className='bg-[#00AEEF] pb-5  font-sen'>
                     <div className='w-[85%] mx-auto'>
-                        <h1 className='text-5xl font-semibold'>Our values</h1>
+                        <h1 className='text-5xl font-semibold text-white'>Our values</h1>
                         <div className='mt-6 grid md:grid-cols-3 gap-3 justify-center'>
                             {OurValues.map((Data , index) => (
-                                <div key={index}>
-                                    <h1 className='text-6xl mb-5'>{Data.number}</h1>
-                                    <div className='space-y-3'>
-                                        <h3 className='text-2xl font-semibold'>{Data.title}</h3>
+                                <div key={index} className='bg-white rounded-lg p-4 shadow-md hover:-translate-y-3 hover:cursor-pointer transition-all ease-in-out duration-300'>
+                                    <div className='bg-[#00AEEF] text-white w-[50px] h-[50px] rounded-full'>
+                                        <h4 className='text-3xl p-2 font-bold'>{Data.number}</h4>
+                                    </div>
+                                    <div className='mt-3 space-y-4'>
+                                        <h1 className='text-xl font-semibold'>{Data.title}</h1>
                                         <p className='text-sm'>{Data.content}</p>
                                     </div>
                                 </div>
@@ -181,7 +183,7 @@ const AboutUs = () => {
                 <h1 className='text-center text-2xl md:text-4xl font-semibold'>Our vision</h1>
                 <p className='mt-2 text-sm text-[#5F5F75] text-center mb-4 md:mb-0'>Our vision is to be the best crowdfunding platform in the world.</p>
                 <div className=' bottom-0 flex flex-col justify-center items-center  '>
-                    <img src={hero1} alt="" className='w-[90%] max-h-[12.5rem] md:w-[80%] md:max-h-[18.75rem] lg:max-h-[25rem] lg:w-[80%]' />
+                    <img src={hero1} alt="" className='w-[90%] max-h-[12.5rem] md:w-[80%] md:max-h-[18.75rem] lg:max-h-[30rem] lg:w-[70%]' />
                 </div>
             </section>
         </body>
