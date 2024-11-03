@@ -96,13 +96,13 @@ const Career = () => {
         </Helmet>
         <body className='font-sen'>
             {/* Hero Section */}
-            <section className='pt-5 h-[23.875rem] lg:h-[95vh] relative px-2'>
+            <section className='pt-5 h-[23.875rem] md:h-[40vh] lg:h-[95vh] relative px-2'>
                 <h1 className='text-center text-xl md:text-4xl font-semibold'>Join Us in Empowering Change Through Crowdfunding</h1>
-                <p className='mt-2 text-sm text-[rgb(95,95,117)] text-center'>Be a part of a dynamic team that's revolutionizing fundraising for non-profits and social enterprises worldwide.</p>
-                <div className='bg-[#F5EFE0] w-[90%] mx-auto rounded-lg h-[50%] md:mt-[9.375rem] relative '>
-                    <img src={Image1} alt="" className='absolute w-[40%] bottom-[5rem] flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2 ' />
+                <p className='my-2 text-sm text-[rgb(95,95,117)] text-center'>Be a part of a dynamic team that's revolutionizing fundraising for non-profits and social enterprises worldwide.</p>
+                <div className='bg-[#F5EFE0] w-[90%] mx-auto rounded-lg h-[30%] lg:h-[50%] mt-[5rem] md:mt-[9.375rem] relative '>
+                    <img src={Image1} alt="" className='absolute h-[100px] md:h-[200px] lg:h-full lg:w-[40%] bottom-[5rem] flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2 ' />
                     <div className='absolute bottom-[1rem] flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2 '>
-                        <button className='bg-[#00AEEF] text-white md:px-3 py-2 rounded-md'>View Open Positions</button>
+                        <button className='bg-[#00AEEF] text-white px-2 md:px-3 py-2 rounded-md text-sm'>View Open Positions</button>
                     </div>
                 </div>
             </section>
@@ -173,7 +173,7 @@ const Career = () => {
                         </div>
                     ))}
                 </div>
-                <div className='w-[80%] mx-auto bg-[#FFFCF7] p-4 shadow-md rounded-md mt-4 md:flex'>
+                <div className='w-[90%] md:w-[80%] mx-auto bg-[#FFFCF7] p-4 shadow-md rounded-md mt-4 md:flex'>
                     <div className='basis-[60%] space-y-6'>
                         <h1 className='text-3xl font-bold'>Program Benefits</h1>
                         <div>

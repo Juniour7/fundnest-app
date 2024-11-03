@@ -148,7 +148,7 @@ const HomePage = () => {
                 {/* Get Started */}
                 <section className='w-[90%] lg:w-[85%] mx-auto py-11 md:flex justify-center '>
                     <div className='basis-[50%] flex flex-wrap gap-2 md:gap-3 relative mb-4 lg:mb-[7rem]'>
-                        <div className='w-[9.375rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] overflow-hidden rounded-lg'>
+                        <div data-aos="zoom-in"  data-aos-duration="3000" className='w-[9.375rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] overflow-hidden rounded-lg'>
                             <img src={rectangle1} alt="image" className='w-full h-full object-cover rounded-lg hover:scale-150 transition-all duration-[3s] cursor-pointer ease-in-out' />
                         </div>
                         <div className='w-[9.345rem] h-[12.5rem] lg:w-[13.375rem] lg:h-[15.875rem] relative top-[3rem] overflow-hidden rounded-lg'>

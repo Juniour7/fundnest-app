@@ -119,7 +119,7 @@ const Blog = () => {
       </Helmet>
       <body className='font-sen'>
         {/* Hero Section */}
-        <section className='pt-5 h-[21.875rem] lg:h-[85vh] relative'>
+        <section className='pt-5 h-[21.875rem] md:h-[40vh] lg:h-[85vh] relative'>
           <h1 className='text-center text-2xl md:text-4xl font-semibold px-[1px] '>Join Us in Empowering Change Through Crowdfunding</h1>
           <p className='mt-2 text-sm text-[#5F5F75] text-center'>Be a part of a dynamic team that's revolutionizing fundraising for non-profits and social enterprises worldwide.</p>
           <div className='absolute bottom-0'>
@@ -129,7 +129,7 @@ const Blog = () => {
 
         {/* Main Section */}
         <section className='border-t-[1.5rem] border-[#00AEEF] py-11'>
-          <div className='w-[85%] mx-auto flex items-center gap-2 my-3'>
+          <div className='w-[85%] md:w-[95%] lg:w-[85%]  mx-auto flex items-center gap-2 my-3'>
             <div>
               <Link to='/'>
                 <span className='text-xl'>
@@ -146,7 +146,7 @@ const Blog = () => {
               <h3 className='font-semibold'>Blog</h3>
             </div>
           </div>
-          <div className='w-[85%] mx-auto md:flex justify-center gap-3'>
+          <div className='w-[85%] md:w-[95%] lg:w-[85%] mx-auto md:flex justify-center gap-3'>
             {/* Left Hand-side */}
             <div className='basis-[70%] grid grid-cols-1 gap-4'>
               {BlogCard.map((Data, index) => (

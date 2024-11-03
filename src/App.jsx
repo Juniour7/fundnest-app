@@ -115,6 +115,7 @@ function App() {
                 <Route path="/career" element={<Career />} />
                 <Route path="/blog" element={<Blog />} />
                 {/* <Route path="/campaign" element={<FundCampaign />} /> */}
+              <Route path="/fundraising-form" element={<FundraisingForm />} />
 
                 <Route path="/know-your-customer" element={<KnowYourCustomer />} />
                 <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />
@@ -133,7 +134,6 @@ function App() {
               
               <Route path="/request-password-reset/" element={<ForgotPassword />} />
               <Route path="/reset-password" element={<ResetPassword />} />
-              <Route path="/fundraising-form" element={<FundraisingForm />} />
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<SignUpForm />} />
               <Route path="/summary" element={<Summary />} />

@@ -60,28 +60,42 @@ const NavSm = () => {
             {isMenuOpen && (
                 <div className={`absolute top-16 left-0 right-0 bg-black text-white z-50 h-screen origin-right transform transition-transform duration-500 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     
-                    <ul className='flex flex-col  py-4 text-lg space-y-4 divide-y-[0.001rem] text-center'>
-                        <li className='py-1'>
-                            <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
-                        </li>
-                        <li  className='py-1'>
-                            <Link to='/about-us' onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/campaign' onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/blog' onClick={() => setIsMenuOpen(false)}>Blog</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/career' onClick={() => setIsMenuOpen(false)}>Career</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-                        </li>
+                    <ul className='flex flex-col text-lg  divide-y-[0.001rem] text-center'>
+                    <Link to='/' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                Home
+                            </li>
+                        </Link>
+                        <Link to='/about-us' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                About Us
+                            </li>
+                        </Link>
+                        <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                How It Works
+                            </li>
+                        </Link>
+                        <Link to='/campaign' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                Campaigns
+                            </li>
+                        </Link>
+                        <Link to='/blog' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                Blog
+                            </li>
+                        </Link>
+                        <Link to='/career' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                Career
+                            </li>
+                        </Link>
+                        <Link to='/contact-us' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-3'>
+                                Contact Us
+                            </li>
+                        </Link>
                     </ul>
                     <div className='flex justify-center items-center'>
                         <button onClick={handleSignInClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
@@ -140,38 +154,52 @@ const NavMd = () => {
             </div>
 
             {isMenuOpen && (
-                <div className='absolute top-16 left-0 right-0 bg-[#00AEEF] z-10'>
-                    <ul className='flex flex-col items-center py-2'>
-                        <li className='py-1'>
-                            <Link to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/about-us' onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)}>How It Works</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/campaign' onClick={() => setIsMenuOpen(false)}>Campaigns</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/blog' onClick={() => setIsMenuOpen(false)}>Blog</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/career' onClick={() => setIsMenuOpen(false)}>Career</Link>
-                        </li>
-                        <li className='py-1'>
-                            <Link to='/contact-us' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-                        </li>
+                <div className='absolute top-20 right-0 bg-black z-50 w-[50%] h-screen'>
+                    <ul className='flex flex-col text-lg  divide-y-[0.001rem] text-center'>
+                        <Link to='/' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                Home
+                            </li>
+                        </Link>
+                        <Link to='/about-us' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                About Us
+                            </li>
+                        </Link>
+                        <Link to='/how-it-works' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                How It Works
+                            </li>
+                        </Link>
+                        <Link to='/campaign' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                Campaigns
+                            </li>
+                        </Link>
+                        <Link to='/blog' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                Blog
+                            </li>
+                        </Link>
+                        <Link to='/career' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                Career
+                            </li>
+                        </Link>
+                        <Link to='/contact-us' onClick={() => setIsMenuOpen(false)} className='block'>
+                            <li className='py-4'>
+                                Contact Us
+                            </li>
+                        </Link>
                     </ul>
-                    <div className='flex flex-col items-center'>
-                        <button onClick={handleStartCampaignClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                    <div className='flex justify-center items-center'>
+                        <button onClick={handleStartCampaignClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Start Campaign
                         </button>
-                        <button onClick={handleSignInClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                        <button onClick={handleSignInClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign In
                         </button>
-                        <button onClick={handleSignUpClick} className='bg-white text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
+                        <button onClick={handleSignUpClick} className=' text-[#00AEEF] rounded-lg py-2 px-3 text-sm my-1'>
                             Sign Up
                         </button>
                     </div>

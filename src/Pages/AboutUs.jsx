@@ -1,8 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-
-
 //images
 import hero from '../assets/AboutPage/Frame.png';
 import hero1 from '../assets/AboutPage/Frame2.png';
@@ -69,11 +67,11 @@ const AboutUs = () => {
         </Helmet>
         <body className='font-sen bg-[#FFFCF7]'>
             {/* Hero Section */}
-            <section className='bg-[#F5EFE0] pt-5 h-[21.875rem] md:h-[25rem] lg:h-[90vh] relative'>
+            <section className='bg-[#F5EFE0] pt-5 h-[21.875rem] md:h-[40vh] lg:h-[90vh] relative'>
                 <h1 className='text-center text-2xl md:text-4xl font-semibold'>World's Fundraising Platform</h1>
                 <p className='mt-2 text-sm text-[#5F5F75] text-center'>Empowering communities to create lasting change through collective giving and impactful campaigns.</p>
-                <div className='absolute bottom-0 flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2'>
-                    <img src={hero} alt="" className='w-[100%] h-[200px] md:h-full md:w-[90%]' />
+                <div className='md:absolute bottom-0 mt-3 md:mt-0 flex flex-col justify-center items-center md:left-1/2 transform md:-translate-x-1/2'>
+                    <img src={hero} alt="" className=' h-[13rem] md:h-[20rem] lg:h-full lg:w-[95%]' />
                 </div>
             </section>  
 
@@ -102,8 +100,8 @@ const AboutUs = () => {
             </section>
 
             {/* We Believe  */}
-            <section className='w-[80%] mx-auto py-4 mt-9'>
-                <h1 className='text-4xl font-bold'>We believe in your choice</h1>
+            <section className='w-[80%] mx-auto py-4 md:mt-9'>
+                <h1 className='text-2xl md:text-4xl font-bold'>We believe in your choice</h1>
                 <div className='my-6 md:flex justify-between text-[#5F5F75] space-y-3 md:space-y-0'>
                     <div className='basis-[50%]'>
                         <p className='text-sm '>We believe in the power of communities coming together to support causes that matter. Fund Nest is here to provide a simple, trustworthy crowdfunding platform that makes it easy for people to fundraise and contribute to impactful projects worldwide.</p>
@@ -120,7 +118,7 @@ const AboutUs = () => {
             {/* Our Values */}
             <section className='relative mt-[5rem] md:mt-[16.5rem]'>
                 <svg
-                    className="absolute -top-[5rem] md:-top-[18.5rem] w-full"
+                    className="absolute -top-[5rem] md:-top-[11rem] lg:-top-[18.5rem] w-full"
                     viewBox="0 0 1440 320"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -150,7 +148,7 @@ const AboutUs = () => {
 
             {/* Our Story */}
             <section className='py-12'>
-                <div className='w-[85%] mx-auto md:flex justify-center gap-4 pb-4'>
+                <div className='w-[85%] md:w-[95%] lg:w-[85%] mx-auto md:flex justify-center gap-4 pb-4'>
                     <div className='basis-[50%]'>
                         <h1 className='text-4xl font-semibold'>Our story</h1>
                         <div className='mt-3 space-y-4 text-sm text-[#5F5F75]'>
@@ -162,16 +160,16 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className='basis-[50%] flex flex-wrap gap-2 pl-2 relative mt-3 md:mt-0'>
-                        <div className='w-[8.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[18.875rem]'>
+                        <div className='w-[8.345rem] h-[12.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[18.875rem]'>
                             <img src={flex1} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[8.345rem] h-[8.5rem] md:w-[15.375rem] md:h-[12.875rem] relative top-[5rem] md:top-[9rem]'>
+                        <div className='w-[8.345rem] h-[8.5rem] md:w-[10rem] lg:w-[15.375rem] lg:h-[12.875rem] relative top-[5rem] lg:top-[9rem]'>
                             <img src={flex2} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[8.345rem] h-[8.5rem] md:w-[15.375rem] md:h-[12.875rem]'>
+                        <div className='w-[8.345rem] h-[8.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[12.875rem]'>
                             <img src={flex3} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[8.345rem] h-[12.5rem] md:w-[15.375rem] md:h-[18.875rem] relative top-[1rem] md:top-[3rem]'>
+                        <div className='w-[8.345rem] h-[12.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[18.875rem] relative top-[1rem] lg:top-[3rem]'>
                             <img src={flex4} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
                     </div>
@@ -179,11 +177,11 @@ const AboutUs = () => {
             </section>
 
             {/* Our Vision */}
-            <section className='bg-[#F5EFE0] pt-5 h-[350px] lg:h-[90vh] relative'>
+            <section className='bg-[#F5EFE0] pt-5   '>
                 <h1 className='text-center text-2xl md:text-4xl font-semibold'>Our vision</h1>
-                <p className='mt-2 text-sm text-[#5F5F75] text-center'>Our vision is to be the best crowdfunding platform in the world.</p>
-                <div className='absolute bottom-0 flex flex-col justify-center items-center left-1/2 transform -translate-x-1/2'>
-                    <img src={hero1} alt="" className='w-[100%] h-[200px] md:h-full md:w-[90%]' />
+                <p className='mt-2 text-sm text-[#5F5F75] text-center mb-4 md:mb-0'>Our vision is to be the best crowdfunding platform in the world.</p>
+                <div className=' bottom-0 flex flex-col justify-center items-center  '>
+                    <img src={hero1} alt="" className='w-[90%] max-h-[12.5rem] md:w-[80%] md:max-h-[18.75rem] lg:max-h-[25rem] lg:w-[80%]' />
                 </div>
             </section>
         </body>

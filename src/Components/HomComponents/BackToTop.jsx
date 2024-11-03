@@ -34,7 +34,7 @@ const BackToTopButton = () => {
             {showButton && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-7 right-4 bg-black text-white p-2 rounded-md shadow-lg hover:bg-[#00AEEF] transition-all duration-300"
+                    className="fixed bottom-7 right-4 bg-[#666666] text-white p-1 rounded-md shadow-lg hover:bg-[#00AEEF] transition-all duration-300"
                 >
                     <GoChevronUp size={30} />
                 </button>

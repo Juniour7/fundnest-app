@@ -39,7 +39,7 @@ const Holders = () => {
 
   return (
     <>
-        <section className='py-3 px-2'>
+        <section className='py-3 px-2 '>
             <div className='grid grid-cols-8 gap-2 justify-center items-center'>
                 {Holders1.map((logo, index) => (
                     <div className=' '>

@@ -141,7 +141,7 @@ const Contacts = () => {
            {/* Got a question */}
            <section className='relative'>
                 <svg
-                    className="absolute -top-[5rem] md:-top-[18.5rem] w-full z-0"
+                    className="absolute -top-[5rem] md:-top-[11rem] lg:-top-[18.5rem] w-full z-0"
                     viewBox="0 0 1440 320"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -151,7 +151,7 @@ const Contacts = () => {
                         d="M0,128L80,144C160,160,320,192,480,181.3C640,171,800,117,960,101.3C1120,85,1280,107,1360,117.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                     ></path>
                 </svg>
-                <div className='pt-20 w-[90%] md:w-[80%] mx-auto'>
+                <div className='pt-20 w-[90%] md:w-[70%] lg:w-[80%] mx-auto'>
                     <div className='my-4 space-y-3'>
                         <h1 className='text-4xl font-semibold text-center'>Got a question?</h1>
                         <p className='text-sm text-[#5F5F75] text-center'>Contact our support department to solve your problem.</p>

@@ -93,7 +93,7 @@ const HowItWorks = () => {
         </Helmet>
         <body className='font-sen'>
             {/* Hero Section */}
-            <section className=' bg-no-repeat w-full h-[17.5rem] md:h-[31.25rem] lg:h-[90vh] relative'>
+            <section className=' bg-no-repeat w-full h-[17.5rem] md:h-[40vh] lg:h-[90vh] relative'>
                 <img src={hero} alt='Hero' className='w-full h-full object-cover' />
                 <div className='absolute w-full h-full top-0 bg-black bg-opacity-50'>
                     <div className='flex flex-col items-center justify-center absolute inset-0 text-white w-[90%] lg:w-[80%] mx-auto'>
@@ -117,7 +117,7 @@ const HowItWorks = () => {
                     <h1 className='text-center text-[#00AEEF] font-bold text-3xl lg:text-5xl'>EMPOWERING DREAMS, TOGETHER</h1>
                     <p className='mt-2'>FundNest brings together passionate fundraisers and compassionate donors to make meaningful change happen. Whether you're starting a cause or  supporting one, our platform makes it easy to create lasting impact in  your community and beyond.</p>
                 </div>
-                <div className='mt-4 w-full h-[15.625rem] lg:h-[90vh]'>
+                <div className='mt-4 w-full h-[15.625rem] md:h-[20rem] lg:h-[90vh]'>
                     <img src={hero2} alt="" className='w-full h-full object-cover'/>
                 </div>
                 
@@ -170,24 +170,24 @@ const HowItWorks = () => {
                 </div>
             </section>
 
-            {/* Start A campaign */}
+            {/* Make A Difference */}
             <section className='py-5'>
-                <div className='w-[78%] mx-auto bg-[#00AEEF] rounded-lg md:flex'>
+                <div className='w-[90%] lg:w-[78%] mx-auto bg-[#00AEEF] rounded-lg md:flex items-center'>
                     <div className='basis-[50%] pt-5'>
                         <img src={frame} alt="" />
                     </div>
                     <div className='basis-[50%] mt-6 pl-3 space-y-9'>
                         <h1 className='text-white text-2xl font-semibold'>Ready to make a difference?</h1>
                         <p>Whether you're starting a fundraiser or supporting a cause, join our community of changemakers today.</p>
-                        <div className='flex gap-3'>
-                            <button onClick={handleStartCampaignClick} className='text-[#00AEEF] bg-white rounded-lg py-2 px-3 text-lg md:flex gap-2 shadow-md  hover:bg-black duration-300 ease-in-out transition-colors'>
-                                <span className='my-auto text-xl'>
+                        <div className='flex gap-2 lg:gap-3 p-1'>
+                            <button onClick={handleStartCampaignClick} className='text-[#00AEEF] bg-white rounded-lg px-2 md:py-2 md:px-3 text-lg md:flex gap-1 md:gap-2 shadow-md  hover:bg-black duration-300 ease-in-out transition-colors'>
+                                <span className='my-auto text-xl hidden lg:block'>
                                     <FaFeather />
                                 </span>
                                 Start Campaign
                             </button>
-                            <button onClick={handleCausesClick} className='text-[#00AEEF] bg-white rounded-lg py-2 px-3 text-lg md:flex gap-2 shadow-md  hover:bg-black duration-300 ease-in-out transition-colors'>
-                                <span className='my-auto text-xl'>
+                            <button onClick={handleCausesClick} className='text-[#00AEEF] bg-white rounded-lg px-2 py-1 md:py-2 md:px-3 text-lg md:flex gap-2 shadow-md  hover:bg-black duration-300 ease-in-out transition-colors'>
+                                <span className='my-auto text-xl hidden lg:block'>
                                     <FaFeather />
                                 </span>
                                 Explore Causes
