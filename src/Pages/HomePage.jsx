@@ -140,6 +140,7 @@ const HomePage = () => {
                 <section className='border-t-[1rem] border-b-[1rem] border-[#00AEEF] py-3 z-10'>
                     <div className='px-2 lg:px-7'>
                         <h4 className='text-md md:text-lg font-semibold md:w-[60%]'>Trusted by Non-Profits, churches and Social Enterprises in 4 Countries | Verified by Industry Leaders for Secure and Impactful Fundraising: </h4>
+                        <h4 className='text-sm mt-3 text-[#00AEEF]'>Powered by</h4>                    
                     </div>
                     <PartnerCarousel />
                 </section>

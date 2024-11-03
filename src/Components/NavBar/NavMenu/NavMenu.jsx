@@ -41,7 +41,7 @@ const NavSm = () => {
 
     return (
         <nav className='w-full py-1 px-3 flex justify-between items-center bg-[#00AEEF] text-white font-sen'>
-            <Link>
+            <Link to='/'>
                 <div className='max-w-[4.575rem]'>
                     <img src={Logo1} className='w-full h-full' alt='Logo' />
                 </div>

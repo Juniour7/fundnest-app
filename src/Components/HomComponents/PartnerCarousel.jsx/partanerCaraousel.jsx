@@ -36,7 +36,7 @@ const PartnerCarousel = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       }
@@ -46,25 +46,25 @@ const PartnerCarousel = () => {
 
   return (
     <>
-      <section className='w-[90%] mx-auto mt-3'>
+      <section className='w-[95%] md:w-[90%] mx-auto mt-3'>
         <Slider {...settings}>
           <div>
-            <img src={Image1} alt="Microsoft" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image1} alt="Microsoft" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
           <div>
-            <img src={Image2} alt="Nvidia" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image2} alt="Nvidia" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
           <div>
-            <img src={Image3} alt="IBM" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image3} alt="IBM" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
           <div>
-            <img src={Image4} alt="Tnoyelu Melu" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image4} alt="Tnoyelu Melu" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
           <div>
-            <img src={Image5} alt="UNDP" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image5} alt="UNDP" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
           <div className=''>
-            <img src={Image6} alt="Hanga" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.75rem]'/>
+            <img src={Image6} alt="Hanga" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.75rem]'/>
           </div>
         </Slider>    
       </section>
