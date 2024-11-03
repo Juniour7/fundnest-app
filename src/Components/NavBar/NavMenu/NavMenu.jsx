@@ -41,9 +41,11 @@ const NavSm = () => {
 
     return (
         <nav className='w-full py-1 px-3 flex justify-between items-center bg-[#00AEEF] text-white font-sen'>
-            <div className='max-w-[4.575rem]'>
-                <img src={Logo1} className='w-full h-full' alt='Logo' />
-            </div>
+            <Link>
+                <div className='max-w-[4.575rem]'>
+                    <img src={Logo1} className='w-full h-full' alt='Logo' />
+                </div>
+            </Link>
             <div className='flex items-center'>
                 <button
                     onClick={toggleMenu}
@@ -120,9 +122,11 @@ const NavMd = () => {
 
     return (
         <nav className='w-full py-1 px-3 flex justify-between items-center bg-[#00AEEF] text-white'>
-            <div className='max-w-[5.5rem]'>
-                <img src={Logo1} className='w-full h-full' alt='Logo' />
-            </div>
+            <Link to='/'>
+                <div className='max-w-[5.5rem]'>
+                    <img src={Logo1} className='w-full h-full' alt='Logo' />
+                </div>
+            </Link>
             <div className='flex items-center'>
                 <button
                     onClick={toggleMenu}
@@ -254,9 +258,11 @@ const NavLg = () => {
                 </div>
             </section>
             <nav className='w-full py-1 px-3 flex justify-between bg-white shadow-md'>
-                <div className='max-w-[5.5rem]'>
-                    <img src={Logo} className='w-full h-full' />
-                </div>
+                <Link to='/'>
+                    <div className='max-w-[5.5rem]'>
+                        <img src={Logo} className='w-full h-full' />
+                    </div>
+                </Link>
                 <div className='my-auto'>
                     <ul className='flex gap-3 font-semibold text-lg'>
                         <li className=''>

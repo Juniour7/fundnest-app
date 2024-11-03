@@ -7,8 +7,8 @@ import StartCampaign from '../Components/HomComponents/StartCampaign';
 import HomeCampaigns from '../Components/HomComponents/HomeCampaigns';
 import AskedQuery from '../Components/HomComponents/AskedQuery';
 import Testimonials from '../Components/HomComponents/Testimonials';
-import MailingList from '../Components/HomComponents/MailingList';
-import partnerCaraousel from '../Components/HomComponents/PartnerCarousel.jsx/partanerCaraousel';
+import PartnerCarousel from '../Components/HomComponents/PartnerCarousel.jsx/partanerCaraousel';
+
 
 //images
 import hero from '../assets/slideshow/hero.jpg'
@@ -141,15 +141,7 @@ const HomePage = () => {
                     <div className='px-2 lg:px-7'>
                         <h4 className='text-md md:text-lg font-semibold md:w-[60%]'>Trusted by Non-Profits, churches and Social Enterprises in 4 Countries | Verified by Industry Leaders for Secure and Impactful Fundraising: </h4>
                     </div>
-                    <div className='w-[95%] mx-auto grid grid-cols-2 lg:grid-cols-6 justify-center gap-2 py-4'>
-                        {/* {FounderImages.map((Data, index) => (
-                            <div key={index} className='w-[8.5rem] h-[3.5rem]'>
-                                <img src={Data.url} alt='logo' className='w-full h-full' />
-                            </div>
-                        ))} */}
-                        
-                    </div>
-                    <partnerCaraousel />
+                    <PartnerCarousel />
                 </section>
 
                 {/* Get Started */}
@@ -225,17 +217,6 @@ const HomePage = () => {
 
                 {/* Testimonials */}
                 <Testimonials />
-
-                {/* Our Partners */}
-                <section className='py-11 px-3'>
-                    <div className='grid grid-cols-2 lg:grid-cols-4 justify-center gap-3'>
-                        {PartnerLogo.map((Logo,index) => (
-                            <div key={index}>
-                                <img src={Logo.image} loading='lazy' alt="" className=''/>
-                            </div>
-                        ))}
-                    </div>
-                </section>
             </body>
         </>
     );

@@ -14,13 +14,15 @@ import Image4 from '../../../assets/Logo/tnoyelumelu.png';
 import Image5 from '../../../assets/Logo/undp.png';
 import Image6 from '../../../assets/Logo/hanga.png';
 
-const partnerCaraousel = () => {
+const PartnerCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // adjust this number based on your layout
+    slidesToShow: 5, // adjust this number based on your layout
     slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -34,7 +36,7 @@ const partnerCaraousel = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
@@ -44,31 +46,30 @@ const partnerCaraousel = () => {
 
   return (
     <>
-      <section className='w-[90%] mx-auto'>
+      <section className='w-[90%] mx-auto mt-3'>
         <Slider {...settings}>
-  <div>
-    <img src={Image1} alt="Microsoft" className='w-[200px] h-[100px]'/>
-  </div>
-  <div>
-    <img src={Image2} alt="Nvidia" className='w-[200px] h-[100px]'/>
-  </div>
-  <div>
-    <img src={Image3} alt="IBM" className='w-[200px] h-[100px]'/>
-  </div>
-  <div>
-    <img src={Image4} alt="Tnoyelu Melu" className='w-[200px] h-[100px]'/>
-  </div>
-  <div>
-    <img src={Image5} alt="UNDP" className='w-[200px] h-[100px]'/>
-  </div>
-  <div>
-    <img src={Image6} alt="Hanga" className='w-[200px] h-[100px]'/>
-  </div>
-</Slider>
-
+          <div>
+            <img src={Image1} alt="Microsoft" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+          </div>
+          <div>
+            <img src={Image2} alt="Nvidia" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+          </div>
+          <div>
+            <img src={Image3} alt="IBM" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+          </div>
+          <div>
+            <img src={Image4} alt="Tnoyelu Melu" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+          </div>
+          <div>
+            <img src={Image5} alt="UNDP" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+          </div>
+          <div className=''>
+            <img src={Image6} alt="Hanga" className='w-[9.375rem] h-[3.125rem] md:w-[12.5rem] md:h-[3.75rem]'/>
+          </div>
+        </Slider>    
       </section>
     </>
   );
 }
 
-export default partnerCaraousel;
+export default PartnerCarousel;
