@@ -42,22 +42,22 @@ const Holders = () => {
         <section className='py-3 px-2 '>
             <div className='grid grid-cols-8 gap-2 justify-center items-center'>
                 {Holders1.map((logo, index) => (
-                    <div className=' '>
-                        <img key={index} src={logo} alt="" className='w-full h-full'/>
+                    <div className='lg:w-[100px] lg:h-[50px]'>
+                        <img key={index} src={logo} alt="" loading="lazy" className='w-full h-full object-contain'/>
                     </div>
                 ))}
             </div>
             <div className='grid grid-cols-9 gap-2 justify-center items-center'>
                 {Holders2.map((logo, index) => (
-                    <div className=' '>
-                        <img key={index} src={logo} alt="" className='w-full h-full'/>
+                    <div className='lg:w-[100px] lg:h-[50px] '>
+                        <img key={index} src={logo} alt="" loading="lazy" className='w-full h-full object-contain'/>
                     </div>
                 ))}
             </div>
             <div className='grid grid-cols-9 gap-2 justify-center items-center'>
                 {Holders3.map((logo, index) => (
-                    <div className=' '>
-                        <img key={index} src={logo} alt="" className='w-full h-full'/>
+                    <div className=' lg:w-[100px] lg:h-[50px]'>
+                        <img key={index} src={logo} alt="" loading="lazy" className='w-full h-full object-contain'/>
                     </div>
                 ))}
             </div>

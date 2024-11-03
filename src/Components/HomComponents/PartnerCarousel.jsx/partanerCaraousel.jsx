@@ -48,7 +48,7 @@ const PartnerCarousel = () => {
     <>
       <section className='w-[95%] lg:w-[90%] mx-auto mt-3'>
         <Slider {...settings} className='overflow-hidden'>
-          <div>
+          <div className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'>
             <img src={Image1} alt="Microsoft" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
           <div>
@@ -63,8 +63,8 @@ const PartnerCarousel = () => {
           <div>
             <img src={Image5} alt="UNDP" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
           </div>
-          <div className=''>
-            <img src={Image6} alt="Hanga" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.75rem]'/>
+          <div className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] flex  justify-center items-center'>
+            <img src={Image6} alt="Hanga" className='w-[7.375rem] h-[2.125rem] md:w-[50%] md:h-[3.75rem] mx-auto '/>
           </div>
         </Slider>    
       </section>
