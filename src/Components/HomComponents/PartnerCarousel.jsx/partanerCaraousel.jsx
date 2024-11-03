@@ -46,25 +46,25 @@ const PartnerCarousel = () => {
 
   return (
     <>
-      <section className='w-[95%] lg:w-[90%] mx-auto mt-3'>
+      <section className='w-[95%] lg:w-[95%] mx-auto mt-3'>
         <Slider {...settings} className='overflow-hidden'>
           <div className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'>
-            <img src={Image1} alt="Microsoft" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image1} alt="Microsoft" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] object-contain'/>
           </div>
           <div>
-            <img src={Image2} alt="Nvidia" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image2} alt="Nvidia" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] object-contain'/>
           </div>
           <div>
-            <img src={Image3} alt="IBM" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image3} alt="IBM" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] object-contain'/>
           </div>
           <div>
-            <img src={Image4} alt="Tnoyelu Melu" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image4} alt="Tnoyelu Melu" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] object-contain'/>
           </div>
           <div>
-            <img src={Image5} alt="UNDP" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem]'/>
+            <img src={Image5} alt="UNDP" className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] object-contain'/>
           </div>
           <div className='w-[7.375rem] h-[2.125rem] md:w-[12.5rem] md:h-[3.125rem] flex  justify-center items-center'>
-            <img src={Image6} alt="Hanga" className='w-[7.375rem] h-[2.125rem] md:w-[50%] md:h-[3.75rem] mx-auto '/>
+            <img src={Image6} alt="Hanga" className='w-[7.375rem] h-[2.125rem] md:w-[50%] md:h-[3.75rem] mx-auto  object-contain'/>
           </div>
         </Slider>    
       </section>

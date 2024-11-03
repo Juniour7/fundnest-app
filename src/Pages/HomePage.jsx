@@ -138,7 +138,7 @@ const HomePage = () => {
 
                 {/* Our Partners */}
                 <section className='border-t-[1rem] border-b-[1rem] border-[#00AEEF] py-3 z-10'>
-                    <div className='px-2 lg:px-7'>
+                    <div className='px-2 lg:w-[95%] mx-auto'>
                         <h4 className='text-md md:text-lg font-semibold md:w-[60%]'>Trusted by Non-Profits, churches and Social Enterprises in 4 Countries | Verified by Industry Leaders for Secure and Impactful Fundraising: </h4>
                         <h4 className='text-sm mt-3 text-[#00AEEF]'>Powered by</h4>                    
                     </div>
@@ -202,7 +202,7 @@ const HomePage = () => {
                     <h1 className='text-center text-2xl md:text-3xl font-bold'>WHY TRUST FUNDNEST</h1>
                     <div className='w-[90%] md:w-[85%] lg:w-[90%] mx-auto  mt-5 grid md:grid-cols-2 lg:grid-cols-5 gap-2'>
                         {TrustData.map((Data,index) => (
-                            <div key={index} className='bg-white px-2 py-3  shadow-md  group hover:bg-red-800'>
+                            <div key={index} className='bg-white px-2 py-3  shadow-md  group hover:-translate-y-3 hover:cursor-pointer transition-all ease-in-out duration-300'>
                                 <div className='flex flex-col justify-center items-center '>
                                     <img src={Data.icon} alt="logo" className='max-w-[3.125rem] h-[3.125rem] object-cover' />
                                 </div>
