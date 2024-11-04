@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 //images
 import hero from '../assets/AboutPage/Frame.png';
 import hero1 from '../assets/AboutPage/Frame2.png';
+import hero3 from '../assets/slideshow/hero3.webp'
 
 import icon1 from '../assets/AboutPage/icon1.png';
 import icon2 from '../assets/AboutPage/icon2.png';
@@ -111,7 +112,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className='h-[9.375rem] md:h-[21.875rem]'>
-                    <img src={image1} alt="" className='rounded-md w-full h-full  object-cover '/>
+                    <img src={hero3} alt="" className='rounded-md w-full h-full  object-cover '/>
                 </div>
             </section>
 
@@ -165,10 +166,10 @@ const AboutUs = () => {
                         <div className='w-[8.345rem] h-[12.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[18.875rem]'>
                             <img src={flex1} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[8.345rem] h-[8.5rem] md:w-[10rem] lg:w-[15.375rem] lg:h-[12.875rem] relative top-[5rem] lg:top-[9rem]'>
+                        <div className='w-[8.345rem] h-[8.5rem] md:w-[10rem] lg:w-[15.375rem] lg:h-[18.875rem] relative top-[5rem] lg:top-[3rem]'>
                             <img src={flex2} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
-                        <div className='w-[8.345rem] h-[8.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[12.875rem]'>
+                        <div className='w-[8.345rem] h-[8.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[18.875rem]'>
                             <img src={flex3} alt="" className='object-cover w-full h-full rounded-md' />
                         </div>
                         <div className='w-[8.345rem] h-[12.5rem] md:w-[10rem] md:h-[13rem] lg:w-[15.375rem] lg:h-[18.875rem] relative top-[1rem] lg:top-[3rem]'>

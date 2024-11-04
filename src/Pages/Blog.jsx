@@ -24,61 +24,130 @@ import Rectangle2 from '../assets/Blog/Rectangle2.jpg';
 import Rectangle3 from '../assets/Blog/Rectangle3.jpg';
 import Rectangle4 from '../assets/Blog/Rectangle4.png';
 import Rectangle5 from '../assets/Blog/Rectangle5.jpg';
+import Rectangle6 from '../assets/Blog/Rectangle 6.jpg';
+import Rectangle7 from '../assets/Blog/Rectangle 7.jpg';
+import Rectangle8 from '../assets/Blog/Rectangle 8.jpg';
+import Rectangle9 from '../assets/Blog/Rectangle 9.jpg';
+
 
 
 const Blog = () => {
   const BlogCard = [
     {
+      Path: 'page1',
       Category: "Petitions",
-      Date: "December 8, 2022",
+      Date: "September 8, 2024",
       Photo: image1,
-      Title: "Meet Crystal, an Indigenous Pipeline Fighter in Texas",
-      Description: "When Crystal Arrieta of El Paso, Texas, started fighting the construction of the Comanche Pipeline 8 months ago, she’d decided ...",
+      Title: "Why Fund Nest is the Best Crowdfunding Platform for Nonprofits and Social Enterprises",
+      Description: "Looking for the perfect crowdfunding platform for your nonprofit or social enterprise? In today's digital fundraising landscape, choosing the right platform can mean the difference between meeting your goals and falling short. Fund Nest has emerged as the leading choice for impact-driven organizations, and here's why.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
     {
       Category: "Petitions",
-      Date: "December 8, 2022",
+      Date: "September 16, 2024",
       Photo: image2,
-      Title: "Want your governor to take action on climate? This toolkit is for you.",
-      Description: "Since Trump decided to withdraw the U.S. from the Paris Agreement, the Change.org community has been pushing state governors to reaffirm their ...",
+      Title: "10 Things Donors Look for Before Making a Donation (And How to Deliver Them)",
+      Description: "Understanding what motivates donors to give is crucial for any successful fundraising campaign. As a donor-centric platform, Fund Nest has analyzed thousands of successful campaigns to identify what really matters to donors. Here's what we've learned about what donors look for before opening their wallets.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
     {
       Category: "Petitions",
-      Date: "December 8, 2022",
+      Date: "September 20, 2024",
       Photo: image3,
-      Title: "Is ’13 Reasons Why’ Causing More Harm Than Good?",
-      Description: "When my father Victor died by suicide seven years ago, it completely changed the way I thought about the act. ...",
+      Title: "The Ultimate Guide to Church Fundraising in the Digital Age",
+      Description: "In today's increasingly digital world, churches need to embrace modern fundraising methods while maintaining their spiritual mission. This comprehensive guide will show you how to effectively raise funds online while strengthening your church community.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
     {
       Category: "Petitions",
-      Date: "December 8, 2022",
+      Date: "September 23, 2024",
       Photo: image4,
-      Title: "Vancouver Ulara Nakagawa inspires petition to save elephant in Japan",
-      Description: "A Vancouver woman's impassioned blog post about an elderly elephant living in a Japanese zoo has inspired an online petitionthat ...",
+      Title: "Fund Nest vs GoFundMe vs Donorbox: A Complete Comparison Guide for 2024",
+      Description: "Choosing the right fundraising platform can significantly impact your organization's success. In this comprehensive comparison guide, we'll break down how Fund Nest stacks up against popular alternatives GoFundMe and Donorbox, helping you make an informed decision for your nonprofit, church, or social enterprise.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
     {
       Category: "Petitions",
-      Date: "December 8, 2022",
+      Date: "September 25, 2024",
       Photo: image5,
-      Title: "NDP statement following the Brussels attacks",
-      Description: "Today, President Obama nominated The Honorable Merrick B. Garland to be the newest Supreme Court Associate Justice. Garland currently serves as ...",
+      Title: "The Complete Guide to Social Enterprise Crowdfunding: Strategies That Actually Work",
+      Description: "Are you a social entrepreneur looking to fund your impact-driven venture? Crowdfunding has emerged as a powerful tool for social enterprises, combining fundraising with community building and impact demonstration. This comprehensive guide will show you exactly how to succeed with social enterprise crowdfunding.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
     {
       Category: "Petitions",
-      Date: "December 8, 2022",
+      Date: "October 2, 2024",
       Photo: image6,
-      Title: "Student Starts Global Movement to Protect Waters from Plastic Waste",
-      Description: "Tyler Doose is an environmental science student at Carleton University in Ottawa, Canada. He started “Protect Our Waters: Say No ...",
+      Title: "7 Proven Strategies to Increase Donor Retention (With Real Examples)",
+      Description: "Did you know that increasing donor retention by just 10% can increase your fundraising revenue by 200%? Yet many organizations struggle to keep donors engaged after their first gift. In this guide, we'll share proven strategies to turn one-time donors into loyal supporters using Fund Nest's powerful platform.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 5, 2024",
+      Photo: Rectangle6,
+      Title: "How to Create a High-Converting Fundraising Campaign (Step-by-Step Guide)",
+      Description: "Did you know that increasing donor retention by just 10% can increase your fundraising revenue by 200%? Yet many organizations struggle to keep donors engaged after their first gift. In this guide, we'll share proven strategies to turn one-time donors into loyal supporters using Fund Nest's powerful platform.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 5, 2024",
+      Photo: Rectangle7,
+      Title: "How to Create a High-Converting Fundraising Campaign (Step-by-Step Guide)",
+      Description: "Want to create a fundraising campaign that actually reaches its goals? With the average online fundraising campaign only achieving 31% of its target, knowing how to structure your campaign for success is crucial. This comprehensive guide will show you exactly how to create, launch, and manage a high-converting fundraising campaign using Fund Nest's powerful platform.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 13, 2024",
+      Photo: Rectangle8,
+      Title: "Monthly Giving Programs: The Complete Setup Guide for Nonprofits",
+      Description: "Want to create predictable, sustainable funding for your nonprofit? Monthly giving programs are proven to increase donor lifetime value by 440% compared to one-time gifts. This comprehensive guide will show you how to set up and grow a successful monthly giving program using Fund Nest's powerful platform.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 17, 2024",
+      Photo: Rectangle9,
+      Title: "Small Nonprofit Guide: How to Compete with Large Organizations Using Technology",
+      Description: "Are you a small nonprofit wondering how to compete with larger organizations for donations and attention? Technology is the great equalizer. This guide shows how small nonprofits can use Fund Nest's platform to punch above their weight and achieve impressive results with limited resources.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 19, 2024",
+      Photo: image6,
+      Title: "Impact Measurement: A Complete Guide for Nonprofits and Social Enterprises",
+      Description: "Want to show donors exactly how their support makes a difference? Effective impact measurement is crucial for attracting and retaining donors, with 87% of supporters saying they're more likely to give again when they understand their donation's impact. This comprehensive guide shows you how to measure and communicate your impact using Fund Nest's powerful tools.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 23, 2024",
+      Photo: image6,
+      Title: "The Ultimate Guide to Year-End Fundraising: Strategies That Work",
+      Description: "Did you know that 30% of annual giving occurs in December, with 10% happening in the last three days of the year? Make the most of this crucial fundraising period with our comprehensive guide to year-end fundraising success using Fund Nest's powerful platform.",
+      Comments: "29 Comments",
+      Time: "4 mins read"
+    },
+    {
+      Category: "Petitions",
+      Date: "October 28, 2024",
+      Photo: image6,
+      Title: "Digital Marketing for Nonprofits: A Complete Strategy Guide",
+      Description: "Want to reach more donors and supporters online? Effective digital marketing is crucial for modern nonprofits, with 55% of donors discovering nonprofits through digital channels. This comprehensive guide shows you how to create and implement a successful digital marketing strategy using Fund Nest's integrated tools.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
@@ -152,9 +221,9 @@ const Blog = () => {
               {BlogCard.map((Data, index) => (
                 <div key={index} className='bg-white rounded-md shadow-md md:flex '> 
                   <div className='basis-[35%] rounded-tl-md rounded-bl-md'>
-                    <img src={Data.Photo} alt="" className='w-full h-[14.625rem] md:h-[16.875rem] object-cover md:rounded-tl-md md:rounded-bl-md' />
+                    <img src={Data.Photo} alt="" className='w-full h-[14.625rem] md:h-[16.875rem] lg:h-full object-cover md:rounded-tl-md md:rounded-bl-md' />
                   </div>
-                  <div className='p-2 md:p-3 basis-[70%]'>
+                  <div className='p-2 pt-3 md:p-3 basis-[70%]'>
                     <div className='flex gap-3'>
                       {/* <button className='bg-[#00AEEF] text-white px-3 py-2 rounded-lg text-sm'>{Data.Category}</button> */}
                       <button className='bg-[#F2EAE1] text-[#5F5F75] text-sm font-semibold px-3 py-2 flex items-center gap-2 rounded-md cursor-not-allowed'>
@@ -164,8 +233,10 @@ const Blog = () => {
                         <h3>{Data.Date}</h3>
                       </button>
                     </div>
-                    <h1 className='text-xl md:text-2xl font-extrabold my-3'>{Data.Title}</h1>
-                    <p className='text-sm text-[#5F5F75]'>{Data.Description}</p>
+                    <Link to={Data.Path}>
+                      <h1 className='text-xl md:text-2xl font-extrabold my-3 hover:text-[#00AEEF] cursor-pointer transition-colors duration-500 ease-in-out'>{Data.Title}</h1>
+                    </Link>
+                    <p className='text-sm text-[#5F5F75] overflow-hidden text-ellipsis line-clamp-3'>{Data.Description}</p>
                     <div className='mt-4 flex gap-1 md:gap-3'>
                       <button className='bg-[#F2EAE1] text-[#5F5F75] text-sm font-semibold px-3 py-2 flex items-center gap-2 rounded-lg cursor-not-allowed'>
                         <span>

@@ -34,6 +34,9 @@ import RefundPolicy from "./Pages/Company Policies/RefundPolicy";
 import KnowYourCustomer from "./Pages/Company Policies/KnowYourCustomer";
 import Contacts from "./Pages/Contacts";
 
+//Blogs
+import Page1 from "./Pages/Blogs/Page1";
+
 // Admin Dashboard Components
 import AdminCampaigns from "./Components/admindashboard/AdminCampaigns";
 import AdminSummary from "./Components/admindashboard/AdminSummary";
@@ -115,7 +118,11 @@ function App() {
                 <Route path="/career" element={<Career />} />
                 <Route path="/blog" element={<Blog />} />
                 {/* <Route path="/campaign" element={<FundCampaign />} /> */}
-              <Route path="/fundraising-form" element={<FundraisingForm />} />
+                <Route path='/blog'>
+                  <Route path='page1' element={<Page1 />} />
+                </Route>
+                
+                <Route path="/fundraising-form" element={<FundraisingForm />} />
 
                 <Route path="/know-your-customer" element={<KnowYourCustomer />} />
                 <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />

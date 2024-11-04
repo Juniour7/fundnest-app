@@ -13,6 +13,7 @@ import Logo from '../assets/Logo/FUND NEST LOGO-01.png';
 
 //components
 import Modal from "../Components/NewAcciuntComponent/Modal";
+import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
 
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
@@ -337,6 +338,7 @@ const SignUpForm = () => {
           </div>
         </section>
       </div>
+      <ScrollToTop />
       {/* Modal for email verification */}
       <Modal
         show={showModal}
