@@ -211,12 +211,12 @@ const Page2 = () => {
                 </div>
             </section>
 
-            <div className='lg:h-[90vh]'>
+            <div className='h-[15.625rem] lg:h-[90vh]'>
                 <img src="https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2F3fa70434-a2a2-45fb-b134-ced541fec912%2F3.jpg?table=block&id=133567ca-6c04-8055-9682-e1bd7f10f895&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2" alt="" className='w-full h-full object-cover' />
             </div>
 
             <section className='w-[90%] mx-auto py-4'>
-                <h1 className='text- text-3xl font-semibold text-[#00AEEF]'>How Fund Nest Helps Organizations Meet Donor Expectations</h1>
+                <h1 className='text-xl md:text-3xl font-semibold text-[#00AEEF]'>How Fund Nest Helps Organizations Meet Donor Expectations</h1>
                 <p className='text-sm my-3'>Fund Nest's platform is designed to help organizations deliver on all these donor preferences:</p>
                 {Expectations.map((Info,index) => (
                     <div key={index}>
