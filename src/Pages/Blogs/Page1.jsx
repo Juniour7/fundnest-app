@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 //components
 import FeaturedPost from '../../Components/Blog Components/FeaturedPost';
@@ -7,8 +7,13 @@ import FeaturedPost from '../../Components/Blog Components/FeaturedPost';
 //icons
 import { FaHome } from 'react-icons/fa';
 import { IoChevronForwardSharp } from 'react-icons/io5';
+import { FaArrowRight } from 'react-icons/fa6';
 
 const Page1 = () => {
+    const navigate = useNavigate();
+    const HandleSignUp = () => {
+        navigate('/sign-up');
+    };
   return (
     <>
         <body className='font-sen py-4 '>
@@ -74,6 +79,74 @@ const Page1 = () => {
                             <div className='bg-[#F2F2F2] p-3 rounded-md shadow-md w-[90%] text-sm hover:scale-110 cursor-pointer transition-all duration-500 ease-in-out'>
                                 <p>"After switching to Fund Nest from our previous platform, we saw a 40% increase in average donation size. The platform makes it easy for donors to give and for us to show impact." - Rev. James Thompson, Grace Community Church</p>
                             </div>
+                        </div>
+                        <div className='mt-3 space-y-2'>
+                            <h1 className='text-3xl'>Why Organizations Choose Fund Nest</h1>
+                            <div>
+                                <h3 className='text-2xl'>1. Built for Growth</h3>
+                                <ol className='list-disc ml-5 text-sm space-y-2'>
+                                    <li>Scalable infrastructure</li>
+                                    <li>Professional credibility features</li>
+                                    <li>Integrated marketing tools</li>
+                                    <li>Mobile-optimized campaigns</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className='mt-3 space-y-2'>
+                            <div>
+                                <h3 className='text-2xl'>2. Donor-Friendly Experience</h3>
+                                <ol className='list-disc ml-5 text-sm space-y-2'>
+                                    <li>Simple, secure donation process</li>
+                                    <li>Multiple payment options</li>
+                                    <li>Easy recurring donations</li>
+                                    <li>Instant tax receipts</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className='mt-3 space-y-2'>
+                            <div>
+                                <h3 className='text-2xl'>3. Maximum Impact</h3>
+                                <ol className='list-disc ml-5 text-sm space-y-2'>
+                                    <li>Lower fees = more money for your mission</li>
+                                    <li>Better donor engagement tools</li>
+                                    <li>Comprehensive analytics</li>
+                                    <li>Real-time reporting</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className='mt-3 space-y-2'>
+                            <h1 className='text-3xl'>Getting Started is Easy</h1>
+                            <div>
+                                <ol className='list-disc ml-5 text-sm space-y-2'>
+                                    <li>Create your free account</li>
+                                    <li>Set up your first campaign in minutes</li>
+                                    <li>Start accepting donations immediately</li>
+                                    <li>Access free training and support</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className='mt-3 space-y-2'>
+                            <h1 className='text-3xl'>The Numbers Speak for Themselves</h1>
+                            <div>
+                                <ol className='list-disc ml-5 text-sm space-y-2'>
+                                   <li>92% of organizations raise more on Fund Nest compared to previous platforms</li>
+                                   <li>Average 45% increase in donor retention</li>
+                                   <li>88% of donors say they're more likely to give again</li>
+                                   <li>4.9/5 average customer satisfaction rating</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className='mt-3'>
+                            <h1 className='text-3xl'>Ready to Transform Your Fundraising?</h1>
+                            <p className='text-sm'>Join thousands of successful organizations already using Fund Nest to make a bigger impact. Our platform combines powerful features, lower fees, and exceptional support to help you raise more funds and achieve your mission.</p>
+                        </div>
+                        <div className='mt-4'>
+                            <button onClick={HandleSignUp} className='text-white bg-[#00AEEF] px-4 py-2 flex gap-2 justify-center items-center rounded-md hover:bg-black transition-colors duration-500 ease-in-out'>
+                                Get Started 
+                                <span>
+                                    <FaArrowRight />
+                                </span>
+                            </button>
                         </div>
                     </div>
 

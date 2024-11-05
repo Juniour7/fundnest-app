@@ -34,7 +34,7 @@ import Rectangle9 from '../assets/Blog/Rectangle 9.jpg';
 const Blog = () => {
   const BlogCard = [
     {
-      Path: 'page1',
+      Path: 'blog1',
       Category: "Petitions",
       Date: "September 8, 2024",
       Photo: image1,
@@ -44,6 +44,7 @@ const Blog = () => {
       Time: "4 mins read"
     },
     {
+      Path: 'blog2',
       Category: "Petitions",
       Date: "September 16, 2024",
       Photo: image2,

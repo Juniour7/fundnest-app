@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Helmet } from 'react-helmet-async';
 
+//Components
+import ApplicationForm from '../Components/CareerComponent/ApplicationForm';
 
 //icons
 import { FaArrowRight } from "react-icons/fa6";
@@ -13,6 +15,11 @@ import image3 from '../assets/Career/image3.png';
 
 
 const Career = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const toggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    };
+
     const Values = [
         {
             number: '01',
@@ -160,7 +167,8 @@ const Career = () => {
                                 </div>
                                 <div className='basis-[30%] flex justify-center mt-4 md:mt-0'>
                                     <div className='space-y-2'>
-                                        <button className='text-white bg-[#00AEEF] px-4 py-2 text-base rounded-lg hover:bg-black transition-colors duration-500 ease-in-out'>Apply Now</button>
+                                        <button onClick={toggleModal} className='text-white bg-[#00AEEF] px-4 py-2 text-base rounded-lg hover:bg-black transition-colors duration-500 ease-in-out'>Apply Now</button>
+                                        <ApplicationForm isOpen={isModalOpen} onClose={toggleModal} />
                                         <p className='text-center text-sm text-[#5F5F75]'>{Data.status}</p>
                                     </div>
                                 </div>

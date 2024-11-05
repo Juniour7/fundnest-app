@@ -36,6 +36,7 @@ import Contacts from "./Pages/Contacts";
 
 //Blogs
 import Page1 from "./Pages/Blogs/Page1";
+import Page2 from "./Pages/Blogs/Page2";
 
 // Admin Dashboard Components
 import AdminCampaigns from "./Components/admindashboard/AdminCampaigns";
@@ -119,7 +120,21 @@ function App() {
                 <Route path="/blog" element={<Blog />} />
                 {/* <Route path="/campaign" element={<FundCampaign />} /> */}
                 <Route path='/blog'>
-                  <Route path='page1' element={<Page1 />} />
+                  <Route path='blog1' element={<Page1 />} />
+                  <Route path='blog2' element={<Page2 />} />
+                  <Route path='blog3' element={<Page2 />} />
+                  <Route path='blog4' element={<Page2 />} />
+                  <Route path='blog5' element={<Page2 />} />
+                  <Route path='blog6' element={<Page2 />} />
+                  <Route path='blog7' element={<Page2 />} />
+                  <Route path='blog8' element={<Page2 />} />
+                  <Route path='blog9' element={<Page2 />} />
+                  <Route path='blog10' element={<Page2 />} />
+                  <Route path='blog11' element={<Page2 />} />
+                  <Route path='blog12' element={<Page2 />} />
+                  <Route path='blog13' element={<Page2 />} />
+
+
                 </Route>
                 
                 <Route path="/fundraising-form" element={<FundraisingForm />} />
