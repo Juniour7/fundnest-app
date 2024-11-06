@@ -37,7 +37,7 @@ const Blog = () => {
       Path: 'blog1',
       Category: "Petitions",
       Date: "September 8, 2024",
-      Photo: image1,
+      Photo: 'https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2F783f9864-80e2-437d-8d0c-7b706e1c9964%2Fpexels-rdne-6646870.jpg?table=block&id=133567ca-6c04-802d-bd13-eb068f4e19e0&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2',
       Title: "Why Fund Nest is the Best Crowdfunding Platform for Nonprofits and Social Enterprises",
       Description: "Looking for the perfect crowdfunding platform for your nonprofit or social enterprise? In today's digital fundraising landscape, choosing the right platform can mean the difference between meeting your goals and falling short. Fund Nest has emerged as the leading choice for impact-driven organizations, and here's why.",
       Comments: "29 Comments",
@@ -47,34 +47,37 @@ const Blog = () => {
       Path: 'blog2',
       Category: "Petitions",
       Date: "September 16, 2024",
-      Photo: image2,
+      Photo: 'https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2F2bbcf013-182c-4fc8-8981-cdfbe35c71f9%2Fpexels-rdne-6647016.jpg?table=block&id=133567ca-6c04-8008-b68d-f7866241560b&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2',
       Title: "10 Things Donors Look for Before Making a Donation (And How to Deliver Them)",
       Description: "Understanding what motivates donors to give is crucial for any successful fundraising campaign. As a donor-centric platform, Fund Nest has analyzed thousands of successful campaigns to identify what really matters to donors. Here's what we've learned about what donors look for before opening their wallets.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
     {
+      Path: 'blog3',
       Category: "Petitions",
       Date: "September 20, 2024",
-      Photo: image3,
+      Photo: 'https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2Fe3ffe64b-565e-4027-8729-f5846f5e37bc%2Fpexels-pavel-danilyuk-8815217.jpg?table=block&id=133567ca-6c04-80ae-be06-d27090831d0b&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=2000&userId=&cache=v2',
       Title: "The Ultimate Guide to Church Fundraising in the Digital Age",
       Description: "In today's increasingly digital world, churches need to embrace modern fundraising methods while maintaining their spiritual mission. This comprehensive guide will show you how to effectively raise funds online while strengthening your church community.",
       Comments: "29 Comments",
       Time: "4 mins read"
     },
+    // {
+    //   Path: 'blog4',
+    //   Category: "Petitions",
+    //   Date: "September 23, 2024",
+    //   Photo: 'https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2F8c007ae9-1276-43b3-9b90-aa109a746514%2Fpexels-rdne-6646816.jpg?table=block&id=133567ca-6c04-8093-95d0-f3305bc2974a&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2',
+    //   Title: "Fund Nest vs GoFundMe vs Donorbox: A Complete Comparison Guide for 2024",
+    //   Description: "Choosing the right fundraising platform can significantly impact your organization's success. In this comprehensive comparison guide, we'll break down how Fund Nest stacks up against popular alternatives GoFundMe and Donorbox, helping you make an informed decision for your nonprofit, church, or social enterprise.",
+    //   Comments: "29 Comments",
+    //   Time: "4 mins read"
+    // },
     {
-      Category: "Petitions",
-      Date: "September 23, 2024",
-      Photo: image4,
-      Title: "Fund Nest vs GoFundMe vs Donorbox: A Complete Comparison Guide for 2024",
-      Description: "Choosing the right fundraising platform can significantly impact your organization's success. In this comprehensive comparison guide, we'll break down how Fund Nest stacks up against popular alternatives GoFundMe and Donorbox, helping you make an informed decision for your nonprofit, church, or social enterprise.",
-      Comments: "29 Comments",
-      Time: "4 mins read"
-    },
-    {
+      Path: 'blog5',
       Category: "Petitions",
       Date: "September 25, 2024",
-      Photo: image5,
+      Photo: 'https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2Fae2f04cf-b8fb-4ba7-a4ea-cfb7c79bab2c%2Fpexels-rdne-7414273.jpg?table=block&id=133567ca-6c04-80b8-bc50-fa8b8ed2515b&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2',
       Title: "The Complete Guide to Social Enterprise Crowdfunding: Strategies That Actually Work",
       Description: "Are you a social entrepreneur looking to fund your impact-driven venture? Crowdfunding has emerged as a powerful tool for social enterprises, combining fundraising with community building and impact demonstration. This comprehensive guide will show you exactly how to succeed with social enterprise crowdfunding.",
       Comments: "29 Comments",
@@ -222,7 +225,7 @@ const Blog = () => {
               {BlogCard.map((Data, index) => (
                 <div key={index} className='bg-white rounded-md shadow-md md:flex '> 
                   <div className='basis-[35%] rounded-tl-md rounded-bl-md'>
-                    <img src={Data.Photo} alt="" className='w-full h-[14.625rem] md:h-[16.875rem] lg:h-full object-cover md:rounded-tl-md md:rounded-bl-md' />
+                    <img src={Data.Photo} alt="" className='w-full h-[14.625rem] md:h-[16.875rem] lg:h-[20rem] object-cover md:rounded-tl-md md:rounded-bl-md' />
                   </div>
                   <div className='p-2 pt-3 md:p-3 basis-[70%]'>
                     <div className='flex gap-3'>

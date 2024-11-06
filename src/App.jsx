@@ -37,6 +37,9 @@ import Contacts from "./Pages/Contacts";
 //Blogs
 import Page1 from "./Pages/Blogs/Page1";
 import Page2 from "./Pages/Blogs/Page2";
+import Page3 from "./Pages/Blogs/Page3";
+import Page4 from "./Pages/Blogs/Page4";
+import Page5 from "./Pages/Blogs/Page5";
 
 // Admin Dashboard Components
 import AdminCampaigns from "./Components/admindashboard/AdminCampaigns";
@@ -122,9 +125,9 @@ function App() {
                 <Route path='/blog'>
                   <Route path='blog1' element={<Page1 />} />
                   <Route path='blog2' element={<Page2 />} />
-                  <Route path='blog3' element={<Page2 />} />
-                  <Route path='blog4' element={<Page2 />} />
-                  <Route path='blog5' element={<Page2 />} />
+                  <Route path='blog3' element={<Page3 />} />
+                  <Route path='blog4' element={<Page4 />} />
+                  <Route path='blog5' element={<Page5 />} />
                   <Route path='blog6' element={<Page2 />} />
                   <Route path='blog7' element={<Page2 />} />
                   <Route path='blog8' element={<Page2 />} />

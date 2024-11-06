@@ -229,7 +229,7 @@ const Page2 = () => {
                     </div>
                 ))}
                 <div className='mt-3'>
-                            <h1 className='text-3xl'>Start Meeting Donor Expectations Today</h1>
+                            <h1 className='text-xl md:text-3xl font-semibold'>Start Meeting Donor Expectations Today</h1>
                             <p className='text-sm'>Ready to transform your donor relationships? Fund Nest provides everything you need to meet and exceed donor expectations.</p>
                         </div>
                         <div className='mt-4'>

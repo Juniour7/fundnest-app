@@ -16,10 +16,10 @@ const Page4 = () => {
             <title>Blog - 10 Things Donors Look for | Fund Nest</title>
         </Helmet>
         <body className='font-sen py-4 '>
-            <h1 className='text-center text-xl md:text-3xl font-semibold w-[90%] mx-auto my-6'>10 Things Donors Look for Before Making a Donation (And How to Deliver Them)</h1>
+            <h1 className='text-center text-xl md:text-3xl font-bold w-[90%] mx-auto my-6 text-[#00AEEF]'>Fund Nest vs GoFundMe vs Donorbox: A Complete Comparison Guide for 2024</h1>
             <section 
-                className='bg-cover  bg-no-repeat bg-center h-[15.625rem] md:h-[40vh] lg:h-[70vh]'
-                style={{backgroundImage: 'url(https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2F2bbcf013-182c-4fc8-8981-cdfbe35c71f9%2Fpexels-rdne-6647016.jpg?table=block&id=133567ca-6c04-8008-b68d-f7866241560b&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2)'}}    
+                className='bg-cover  bg-no-repeat bg-top h-[15.625rem] md:h-[40vh] lg:h-[90vh]'
+                style={{backgroundImage: 'url(https://iraady.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83398eb6-e048-420e-b776-57b9b5fa6f93%2Fde37f7c7-cc66-46c8-99da-41ffe237787b%2F14.jpg?table=block&id=133567ca-6c04-80cc-b451-de1ed6656166&spaceId=83398eb6-e048-420e-b776-57b9b5fa6f93&width=1420&userId=&cache=v2)'}}    
             >
             </section>
 
@@ -45,7 +45,11 @@ const Page4 = () => {
 
                 <div className='md:flex justify-center gap-3'>
                     {/* Blog */}
-                    <div className='basis-[70%] pt-4'></div>
+                    <div className='basis-[70%] pt-4'>
+                        <p>Choosing the right fundraising platform can significantly impact your organization's success. In this comprehensive comparison guide, we'll break down how Fund Nest stacks up against popular alternatives GoFundMe and Donorbox, helping you make an informed decision for your nonprofit, church, or social enterprise.</p>
+                        Quick Comparison Table
+                        <div></div>
+                    </div>
 
                     {/* Featured Posts */}
                     <FeaturedPost />
