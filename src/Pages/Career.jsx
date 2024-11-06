@@ -12,6 +12,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Image1 from '../assets/Career/image1.png';
 import image2 from '../assets/Career/image2.jpg';
 import image3 from '../assets/Career/image3.png';
+import { Link } from 'react-router-dom';
 
 
 const Career = () => {
@@ -40,6 +41,7 @@ const Career = () => {
 
     const OpenPosition = [
         {
+            path: 'marketing-intern',
             title: "Marketing Intern",
             description: "Join our dynamic marketing team to create compelling campaigns that  connect donors with causes. You'll learn hands-on digital marketing  skills while helping nonprofits and fundraisers tell their stories and  reach their goals. This 3-month program provides real-world experience  in social impact marketing.",
             type: "Marketing",
@@ -48,6 +50,7 @@ const Career = () => {
             status: "Ongoing"
         },
         {
+            path: 'graphic-design',
             title: "Graphic Design Volunteer",
             description: "Help bring impactful stories to life through visual design. Create  compelling graphics and materials for fundraising campaigns, social  media, and platform materials. This 3-month program offers hands-on  experience in nonprofit design while building your portfolio.",
             type: "Creative",
@@ -56,6 +59,7 @@ const Career = () => {
             status: "Ongoing"
         },
         {
+            path: 'social-media-management',
             title: "Social Media Management Intern",
             description: "Drive engagement and build community through compelling social media  content. Learn to create strategies that amplify our impact and connect  with donors and fundraisers. This 3-month program provides practical  experience in social media marketing for social good.",
             type: "Marketing",
@@ -64,6 +68,7 @@ const Career = () => {
             status: "Ongoing"
         },
         {
+            path: 'sales-development',
             title: "Sales Development Volunteer",
             description: "Join our sales team to help organizations and fundraisers maximize their impact through our platform. Learn valuable relationship-building  skills while connecting worthy causes with the tools they need to  succeed. This 3-month program offers real sales experience in the social impact sector.",
             type: "Sales",
@@ -167,8 +172,9 @@ const Career = () => {
                                 </div>
                                 <div className='basis-[30%] flex justify-center mt-4 md:mt-0'>
                                     <div className='space-y-2'>
-                                        <button onClick={toggleModal} className='text-white bg-[#00AEEF] px-4 py-2 text-base rounded-lg hover:bg-black transition-colors duration-500 ease-in-out'>Apply Now</button>
-                                        <ApplicationForm isOpen={isModalOpen} onClose={toggleModal} />
+                                        <Link to={Data.path}>
+                                            <button className='text-white bg-[#00AEEF] px-4 py-2 text-base rounded-lg hover:bg-black transition-colors duration-500 ease-in-out'>Apply Now</button>
+                                        </Link>
                                         <p className='text-center text-sm text-[#5F5F75]'>{Data.status}</p>
                                     </div>
                                 </div>
